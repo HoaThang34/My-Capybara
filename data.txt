@@ -1,0 +1,84 @@
+Bạn Thỏ có 2 củ cà rốt, bạn Sóc cho thêm 3 củ. Hỏi bạn Thỏ có tất cả mấy củ cà rốt?|4 củ|5 củ|6 củ|7 củ|B
+Bạn Mèo có 1 quả táo, ăn mất 1 quả. Hỏi bạn Mèo còn lại bao nhiêu quả?|0 quả|1 quả|2 quả|3 quả|B
+Bạn Vịt có 4 quả trứng, bạn Ngỗng lấy đi 2 quả. Hỏi còn lại mấy quả?|1 quả|2 quả|3 quả|4 quả|B
+__ + 2 = 5. Hỏi __ bằng bao nhiêu?|2|3|4|5|B
+7 − __ = 4. Hỏi __ bằng bao nhiêu?|2|3|4|5|B
+Bạn Chuột có 3 viên kẹo, bạn Sóc cho thêm 4 viên. Hỏi bạn Chuột có bao nhiêu viên kẹo?|6 viên|7 viên|8 viên|9 viên|B
+Bạn Gà đếm được 5 con, bạn Vịt đếm thêm 2 con. Tổng có bao nhiêu con?|6 con|7 con|8 con|9 con|B
+Bạn Bé có 8 viên bi, thả rơi mất 3 viên. Còn lại bao nhiêu viên?|4 viên|5 viên|6 viên|7 viên|B
+Bạn Cá có 2 ngôi sao, bạn Sao biển cho thêm 5 ngôi sao. Hỏi có tất cả mấy ngôi sao?|6 ngôi|7 ngôi|8 ngôi|9 ngôi|B
+Số nào lớn hơn? 6 hay 4?|4|5|6|7|C
+Số nào nhỏ hơn? 2 hay 5?|1|2|3|4|B
+Bạn Thỏ có 5 củ cà rốt, ăn hết 2 củ. Hỏi còn lại mấy củ?|2 củ|3 củ|4 củ|5 củ|B
+3 + 4 = ?|5|6|7|8|C
+9 − 5 = ?|3|4|5|6|B
+Bạn Gấu có 6 quả bóng, cho bạn Hổ 3 quả. Còn lại mấy quả?|2 quả|3 quả|4 quả|5 quả|C
+__ + 3 = 9. Hỏi __=?|5|6|7|8|B
+10 − __ = 7. Hỏi __=?|2|3|4|5|B
+Bạn Heo có 7 cây kẹo, ăn mất 4 cây. Còn lại bao nhiêu?|2 cây|3 cây|4 cây|5 cây|B
+2 + 2 = ?|3|4|5|6|B
+8 − 3 = ?|4|5|6|7|B
+Bạn Voi có 3 quả chuối, bạn Tê giác cho thêm 3 quả. Hỏi tổng là bao nhiêu?|5 quả|6 quả|7 quả|8 quả|B
+Bạn Sư tử có 1 quả cam, ăn thêm 2 quả. Tổng có bao nhiêu quả?|2 quả|3 quả|4 quả|5 quả|B
+__ + 5 = 10. Hỏi __=?|4|5|6|7|C
+10 − __ = 2. Hỏi __=?|6|7|8|9|C
+Bạn Cá heo có 4 chiếc vòng, bạn Cá voi cho thêm 1 chiếc. Hỏi có tất cả mấy chiếc?|4 chiếc|5 chiếc|6 chiếc|7 chiếc|B
+5 + 1 = ?|5|6|7|8|B
+7 − 2 = ?|4|5|6|7|A
+Bạn Bé có 9 viên bi, cho bạn 3 viên. Còn lại bao nhiêu viên?|5 viên|6 viên|7 viên|8 viên|B
+__ + 1 = 4. Hỏi __=?|2|3|4|5|B
+6 − __ = 2. Hỏi __=?|3|4|5|6|A
+Bạn Sóc có 8 hạt dẻ, bạn Thỏ lấy đi 5 hạt. Còn lại bao nhiêu?|2 hạt|3 hạt|4 hạt|5 hạt|B
+4 + 3 = ?|6|7|8|9|B
+9 − 4 = ?|4|5|6|7|B
+Bạn Mèo có 2 chiếc nơ, bạn Chuột cho thêm 2 chiếc. Hỏi tổng là bao nhiêu?|3 chiếc|4 chiếc|5 chiếc|6 chiếc|B
+__ + 4 = 6. Hỏi __=?|1|2|3|4|B
+6 − __ = 1. Hỏi __=?|4|5|6|7|B
+Bạn Vịt có 5 quả trứng, sinh thêm 2 quả. Hỏi tổng có bao nhiêu?|6 quả|7 quả|8 quả|9 quả|B
+3 + 5 = ?|7|8|9|10|B
+8 − 6 = ?|1|2|3|4|B
+Bạn Gà có 1 quả trứng, nở ra thêm 3 quả. Hỏi có tổng bao nhiêu?|3 quả|4 quả|5 quả|6 quả|B
+__ + 2 = 7. Hỏi __=?|4|5|6|7|B
+7 − __ = 3. Hỏi __=?|2|3|4|5|C
+Bạn Bé có 4 cây kẹo, bạn Cho thêm 3 cây. Tổng có bao nhiêu cây?|6 cây|7 cây|8 cây|9 cây|B
+5 + 2 = ?|6|7|8|9|B
+9 − 7 = ?|1|2|3|4|B
+Bạn Cá có 2 bạn cá con, sinh thêm 2 bạn. Tổng có bao nhiêu bạn cá?|3|4|5|6|B
+__ + 6 = 8. Hỏi __=?|1|2|3|4|B
+8 − __ = 5. Hỏi __=?|2|3|4|5|C
+Bạn Hươu có 3 cây cỏ, bạn Nai cho thêm 4 cây. Tổng có bao nhiêu?|6|7|8|9|B
+2 + 5 = ?|6|7|8|9|B
+7 − 1 = ?|5|6|7|8|A
+Bạn Sóc có 6 hạt dẻ, ăn mất 2 hạt. Còn lại bao nhiêu?|3|4|5|6|B
+__ + 3 = 10. Hỏi __=?|6|7|8|9|A
+10 − __ = 4. Hỏi __=?|4|5|6|7|C
+Bạn Gấu có 1 quả táo, bạn Chuột cho thêm 5 quả. Tổng có bao nhiêu quả?|5|6|7|8|B
+4 + 4 = ?|7|8|9|10|B
+9 − 2 = ?|6|7|8|9|B
+Bạn Vịt có 7 quả trứng, vỡ mất 3 quả. Còn lại bao nhiêu?|3|4|5|6|B
+__ + 4 = 9. Hỏi __=?|4|5|6|7|C
+9 − __ = 3. Hỏi __=?|5|6|7|8|A
+Bạn Mèo có 3 chiếc nơ, bạn Thỏ cho thêm 3 chiếc. Tổng có bao nhiêu?|5|6|7|8|B
+5 + 3 = ?|7|8|9|10|B
+8 − 5 = ?|2|3|4|5|B
+Bạn Bé có 2 cuốn sách, bạn Cho thêm 4 cuốn. Tổng có bao nhiêu cuốn?|5|6|7|8|D
+__ + 2 = 6. Hỏi __=?|2|3|4|5|C
+6 − __ = 3. Hỏi __=?|2|3|4|5|B
+Bạn Sóc có 5 hạt dẻ, bạn Thỏ cho thêm 1 hạt. Tổng có bao nhiêu?|5|6|7|8|B
+3 + 2 = ?|4|5|6|7|B
+7 − 3 = ?|3|4|5|6|B
+Bạn Gà có 4 quả trứng, đẻ thêm 1 quả. Tổng có bao nhiêu?|4|5|6|7|B
+__ + 5 = 9. Hỏi __=?|3|4|5|6|B
+9 − __ = 6. Hỏi __=?|2|3|4|5|A
+Bạn Voi có 2 quả chuối, bạn Ngựa cho thêm 3 quả. Tổng có bao nhiêu?|4|5|6|7|B
+4 + 2 = ?|5|6|7|8|B
+8 − 7 = ?|0|1|2|3|B
+Bạn Bé có 1 cây kẹo, bạn Cho thêm 2 cây. Tổng có bao nhiêu cây?|2|3|4|5|B
+__ + 1 = 5. Hỏi __=?|3|4|5|6|B
+5 − __ = 2. Hỏi __=?|2|3|4|5|A
+Bạn Thỏ có 6 củ cà rốt, ăn hết 1 củ. Còn lại bao nhiêu củ?|4|5|6|7|B
+2 + 6 = ?|7|8|9|10|B
+9 − 8 = ?|0|1|2|3|B
+Bạn Sóc có 3 quả hạt dẻ, bạn Mèo cho thêm 2 quả. Tổng có bao nhiêu?|4|5|6|7|B
+__ + 3 = 8. Hỏi __=?|4|5|6|7|A
+8 − __ = 4. Hỏi __=?|2|3|4|5|C
