@@ -1,196 +1,84 @@
 Bạn Thỏ có 2 củ cà rốt, bạn Sóc cho thêm 3 củ. Hỏi bạn Thỏ có tất cả mấy củ cà rốt?|4 củ|5 củ|6 củ|7 củ|B
-Trên cành cây có 7 chú chim, bay đi mất 3 chú. Hỏi trên cành còn lại mấy chú chim?|3 chú|5 chú|4 chú|2 chú|C
-Mẹ mua cho bé 5 cái bánh, bé đã ăn 1 cái. Bé còn lại bao nhiêu cái bánh?|4 cái|5 cái|3 cái|6 cái|A
-Trong giỏ có 6 quả táo và 4 quả cam. Hỏi trong giỏ có tất cả bao nhiêu quả?|9 quả|8 quả|11 quả|10 quả|D
-Lớp 1A có 8 bạn nam và 8 bạn nữ. Hỏi lớp 1A có tất cả bao nhiêu bạn?|15 bạn|16 bạn|17 bạn|18 bạn|B
-Một tuần có 7 ngày, bé đã đi học 5 ngày. Hỏi bé được nghỉ mấy ngày?|1 ngày|2 ngày|3 ngày|4 ngày|B
-Bé có 10 viên bi, bé cho bạn 4 viên. Hỏi bé còn lại mấy viên bi?|5 viên|7 viên|8 viên|6 viên|D
-9 + 2 = ?|10|11|12|9|B
-8 + 5 = ?|12|14|13|15|C
-7 + 7 = ?|14|13|15|16|A
-12 - 5 = ?|6|8|7|9|C
-15 - 8 = ?|7|6|8|5|A
-11 - 3 = ?|9|7|8|6|C
-17 - 9 = ?|7|8|9|6|B
-Bố câu được 5 con cá, anh câu được 4 con cá. Cả hai bố con câu được mấy con cá?|8 con|10 con|9 con|7 con|C
-Trong vườn có 12 bông hoa, bé hái 3 bông để tặng mẹ. Trong vườn còn lại mấy bông hoa?|8 bông|9 bông|10 bông|7 bông|B
-Số nào cộng với 5 thì bằng 11?|5|6|7|8|B
-Lấy 14 trừ đi số nào để được 6?|7|9|8|6|C
-Số nào là kết quả của phép tính 16 - 7?|8|10|9|11|C
-Trong chuồng có 5 con gà mái và 5 con gà trống. Hỏi trong chuồng có tất cả bao nhiêu con gà?|10 con|11 con|9 con|12 con|A
-Trên xe buýt có 15 người, đến bến có 6 người xuống. Hỏi trên xe còn lại bao nhiêu người?|8 người|7 người|10 người|9 người|D
-Số liền sau của số 19 là số mấy?|Số 18|Số 20|Số 21|Số 19|B
-Số liền trước của số 30 là số mấy?|Số 29|Số 31|Số 28|Số 30|A
-Số lớn nhất trong các số: 12, 21, 19, 9 là số nào?|12|19|9|21|D
-Số bé nhất trong các số: 55, 49, 60, 51 là số nào?|55|49|51|60|B
-Điền dấu thích hợp vào chỗ trống: 15 ... 9 + 5|>|<|=|Không có|A
-Điền dấu thích hợp vào chỗ trống: 8 + 6 ... 14|>|<|=|Không có|C
-Số tròn chục lớn nhất có hai chữ số là số nào?|10|99|90|100|C
-Số bé nhất có hai chữ số giống nhau là số nào?|10|11|22|12|B
-Trong các số 27, 72, 22, 77, số nào vừa có chữ số 2 vừa có chữ số 7?|22|77|27 và 72|Chỉ 27|C
-Sắp xếp các số 19, 45, 28, 50 theo thứ tự từ bé đến lớn.|19, 28, 45, 50|19, 45, 28, 50|50, 45, 28, 19|28, 19, 45, 50|A
-Số gồm 5 chục và 3 đơn vị là số nào?|35|50|53|3|C
-Số 84 gồm mấy chục và mấy đơn vị?|8 chục và 4 đơn vị|4 chục và 8 đơn vị|80 chục và 4 đơn vị|8 chục và 14 đơn vị|A
-Đếm cách 2 bắt đầu từ 10: 10, 12, 14, ..., 18. Số còn thiếu là?|15|16|17|13|B
-Vật nào sau đây thường có dạng hình tròn?|Cục tẩy|Cái đĩa|Quyển vở|Hộp sữa|B
-Vật nào dưới đây dài hơn?|Cái bút chì|Ngón tay của bé|Cái thước kẻ 20cm|Cái bàn học|D
-Khi kim dài chỉ số 12, kim ngắn chỉ số 3, đồng hồ chỉ mấy giờ?|12 giờ 3 phút|3 giờ 12 phút|12 giờ rưỡi|3 giờ đúng|D
-Khi kim dài chỉ số 6, kim ngắn ở giữa số 8 và 9, đồng hồ chỉ mấy giờ?|8 giờ 6 phút|6 giờ 8 phút|8 giờ rưỡi|9 giờ rưỡi|C
-Một gang tay của mẹ dài khoảng bao nhiêu cm?|5 cm|20 cm|50 cm|100 cm|B
-Cái kẹo mút nặng hơn hay quyển sách giáo khoa nặng hơn?|Cái kẹo mút|Bằng nhau|Quyển sách|Không biết|C
-Hình gì có 4 cạnh bằng nhau?|Hình tam giác|Hình chữ nhật|Hình tròn|Hình vuông|D
-Thứ Hai tuần này là ngày 10, vậy Thứ Tư tuần này là ngày mấy?|Ngày 11|Ngày 13|Ngày 12|Ngày 14|C
-Điền 'ch' hoặc 'tr' vào chỗ trống: Cây ...e trăm đốt.|ch|tr|c|t|B
-Điền 's' hoặc 'x' vào chỗ trống: ...inh đẹp như một nàng công chúa.|s|x|c|d|A
-Điền 'd', 'gi' hoặc 'r' vào chỗ trống: Quả ...ưa hấu.|d|gi|r|g|A
-Điền 'l' hoặc 'n' vào chỗ trống: Bé tập viết ...ắn ...ót.|l|n|cả hai đều là l|cả hai đều là n|D
-Điền vần 'ươn' hoặc 'ương': Con đường làng quanh co ...|ươn|ương|uon|uong|B
-Điền 'g' hoặc 'gh' vào chỗ trống: Cái ...ế gỗ.|g|gh|c|k|B
-Điền 'c', 'k' hoặc 'q': Con ...iến chăm chỉ.|c|k|q|ch|B
-Điền vần 'iu' hay 'iêu': Chú chim hót ...íu ...ít.|iu - iu|iêu - iêu|iu - iêu|iêu - iu|C
-Điền 'ng' hay 'ngh': Bé ...e bà kể chuyện.|ng|ngh|n|nh|A
-Điền 's' hay 'x': Bé ăn ...ôi buổi ...áng.|s - x|x - s|s - s|x - x|D
-Điền vần 'oan' hay 'oang': Tiếng trống kêu ... vang.|oan|oang|on|ong|B
-Điền 'tr' hay 'ch': Bức ...anh vẽ con ...âu.|tr - ch|ch - tr|tr - tr|ch - ch|B
-Từ nào sau đây chỉ đồ vật trong nhà?|Con mèo|Cái cây|Cái bàn|Bông hoa|C
-Từ nào sau đây chỉ một loài hoa?|Con ong|Hoa hồng|Quả táo|Cái lá|B
-Từ nào viết đúng chính tả?|Dòng sông|Gòng sông|Dòng xông|Ròng sông|A
-Từ nào viết sai chính tả?|Cái kéo|Cái kây|Cái kẹo|Con kiến|B
-Sắp xếp các từ 'em', 'học', 'chăm', 'chỉ' thành câu có nghĩa.|Chăm chỉ em học.|Em học chăm chỉ.|Học em chăm chỉ.|Em chăm học chỉ.|B
-Sắp xếp các từ 'Mẹ', 'đi', 'chợ' thành câu đúng.|Chợ đi Mẹ.|Đi Mẹ chợ.|Mẹ đi chợ.|Mẹ chợ đi.|C
-Dòng nào chỉ gồm các từ chỉ con vật?|Chó, mèo, bàn, ghế|Vịt, ngan, gà, lợn|Sách, vở, bút, mực|Xoài, ổi, cam, quýt|B
-"Lấp lánh" là từ chỉ đặc điểm của vật nào?|Ngôi sao|Mặt đất|Cái cây|Ngôi nhà|A
-Câu "Bé rất yêu trường em." có mấy tiếng?|5 tiếng|6 tiếng|7 tiếng|4 tiếng|B
-Trong câu "Chú bộ đội canh giữ biển trời.", từ nào chỉ người?|Canh giữ|Biển trời|Chú bộ đội|Cả A và C|C
-Con vật nào kêu "Meo meo"?|Con chó|Con gà|Con lợn|Con mèo|D
-Con gì được gọi là "chúa tể sơn lâm"?|Con voi|Con hổ|Con khỉ|Con hươu|B
-Khi đèn giao thông chuyển sang màu đỏ, bé phải làm gì?|Đi tiếp|Dừng lại|Đi chậm lại|Chạy thật nhanh|B
-Đâu là một loại quả có vị chua?|Quả chuối|Quả dưa hấu|Quả chanh|Quả na|C
-Ai là người đưa thư cho mọi người?|Bác sĩ|Chú công an|Cô giáo|Bác đưa thư|D
-Vào ngày Tết, các bạn nhỏ thường được nhận gì?|Điểm 10|Tiền lì xì|Sách vở mới|Quà sinh nhật|B
-Loài hoa nào là biểu tượng của mùa hè?|Hoa đào|Hoa mai|Hoa phượng|Hoa cúc|C
-Để răng luôn trắng khỏe, bé phải làm gì mỗi ngày?|Ăn nhiều kẹo|Uống nước ngọt|Đánh răng|Xem ti vi|C
-Khi gặp người lớn, bé nên làm gì?|Làm lơ|Chào hỏi lễ phép|Chạy đi trốn|Khóc nhè|B
-Thủ đô của nước Việt Nam là thành phố nào?|TP. Hồ Chí Minh|Đà Nẵng|Hà Nội|Cần Thơ|C
-Môn thể thao nào được gọi là "môn thể thao vua"?|Bóng rổ|Bơi lội|Cầu lông|Bóng đá|D
-Bạn Thỏ có 2 củ cà rốt, bạn Sóc cho thêm 3 củ. Hỏi bạn Thỏ có tất cả mấy củ cà rốt?|4 củ|5 củ|6 củ|7 củ|B
-Trên cành cây có 7 chú chim, bay đi mất 3 chú. Hỏi trên cành còn lại mấy chú chim?|3 chú|5 chú|4 chú|2 chú|C
-Mẹ mua cho bé 5 cái bánh, bé đã ăn 1 cái. Bé còn lại bao nhiêu cái bánh?|4 cái|5 cái|3 cái|6 cái|A
-Trong giỏ có 6 quả táo và 4 quả cam. Hỏi trong giỏ có tất cả bao nhiêu quả?|9 quả|8 quả|11 quả|10 quả|D
-Lớp 1A có 8 bạn nam và 8 bạn nữ. Hỏi lớp 1A có tất cả bao nhiêu bạn?|15 bạn|16 bạn|17 bạn|18 bạn|B
-Một tuần có 7 ngày, bé đã đi học 5 ngày. Hỏi bé được nghỉ mấy ngày?|1 ngày|2 ngày|3 ngày|4 ngày|B
-Bé có 10 viên bi, bé cho bạn 4 viên. Hỏi bé còn lại mấy viên bi?|5 viên|7 viên|8 viên|6 viên|D
-9 + 2 = ?|10|11|12|9|B
-8 + 5 = ?|12|14|13|15|C
-7 + 7 = ?|14|13|15|16|A
-12 - 5 = ?|6|8|7|9|C
-15 - 8 = ?|7|6|8|5|A
-11 - 3 = ?|9|7|8|6|C
-17 - 9 = ?|7|8|9|6|B
-Bố câu được 5 con cá, anh câu được 4 con cá. Cả hai bố con câu được mấy con cá?|8 con|10 con|9 con|7 con|C
-Trong vườn có 12 bông hoa, bé hái 3 bông để tặng mẹ. Trong vườn còn lại mấy bông hoa?|8 bông|9 bông|10 bông|7 bông|B
-Số nào cộng với 5 thì bằng 11?|5|6|7|8|B
-Lấy 14 trừ đi số nào để được 6?|7|9|8|6|C
-Số nào là kết quả của phép tính 16 - 7?|8|10|9|11|C
-Trong chuồng có 5 con gà mái và 5 con gà trống. Hỏi trong chuồng có tất cả bao nhiêu con gà?|10 con|11 con|9 con|12 con|A
-Trên xe buýt có 15 người, đến bến có 6 người xuống. Hỏi trên xe còn lại bao nhiêu người?|8 người|7 người|10 người|9 người|D
-Số liền sau của số 19 là số mấy?|Số 18|Số 20|Số 21|Số 19|B
-Số liền trước của số 30 là số mấy?|Số 29|Số 31|Số 28|Số 30|A
-Số lớn nhất trong các số: 12, 21, 19, 9 là số nào?|12|19|9|21|D
-Số bé nhất trong các số: 55, 49, 60, 51 là số nào?|55|49|51|60|B
-Điền dấu thích hợp vào chỗ trống: 15 ... 9 + 5|>|<|=|Không có|A
-Điền dấu thích hợp vào chỗ trống: 8 + 6 ... 14|>|<|=|Không có|C
-Số tròn chục lớn nhất có hai chữ số là số nào?|10|99|90|100|C
-Số bé nhất có hai chữ số giống nhau là số nào?|10|11|22|12|B
-Trong các số 27, 72, 22, 77, số nào vừa có chữ số 2 vừa có chữ số 7?|22|77|27 và 72|Chỉ 27|C
-Sắp xếp các số 19, 45, 28, 50 theo thứ tự từ bé đến lớn.|19, 28, 45, 50|19, 45, 28, 50|50, 45, 28, 19|28, 19, 45, 50|A
-Số gồm 5 chục và 3 đơn vị là số nào?|35|50|53|3|C
-Số 84 gồm mấy chục và mấy đơn vị?|8 chục và 4 đơn vị|4 chục và 8 đơn vị|80 chục và 4 đơn vị|8 chục và 14 đơn vị|A
-Đếm cách 2 bắt đầu từ 10: 10, 12, 14, ..., 18. Số còn thiếu là?|15|16|17|13|B
-Vật nào sau đây thường có dạng hình tròn?|Cục tẩy|Cái đĩa|Quyển vở|Hộp sữa|B
-Vật nào dưới đây dài hơn?|Cái bút chì|Ngón tay của bé|Cái thước kẻ 20cm|Cái bàn học|D
-Khi kim dài chỉ số 12, kim ngắn chỉ số 3, đồng hồ chỉ mấy giờ?|12 giờ 3 phút|3 giờ 12 phút|12 giờ rưỡi|3 giờ đúng|D
-Khi kim dài chỉ số 6, kim ngắn ở giữa số 8 và 9, đồng hồ chỉ mấy giờ?|8 giờ 6 phút|6 giờ 8 phút|8 giờ rưỡi|9 giờ rưỡi|C
-Một gang tay của mẹ dài khoảng bao nhiêu cm?|5 cm|20 cm|50 cm|100 cm|B
-Cái kẹo mút nặng hơn hay quyển sách giáo khoa nặng hơn?|Cái kẹo mút|Bằng nhau|Quyển sách|Không biết|C
-Hình gì có 4 cạnh bằng nhau?|Hình tam giác|Hình chữ nhật|Hình tròn|Hình vuông|D
-Thứ Hai tuần này là ngày 10, vậy Thứ Tư tuần này là ngày mấy?|Ngày 11|Ngày 13|Ngày 12|Ngày 14|C
-Điền 'ch' hoặc 'tr' vào chỗ trống: Cây ...e trăm đốt.|ch|tr|c|t|B
-Điền 's' hoặc 'x' vào chỗ trống: ...inh đẹp như một nàng công chúa.|s|x|c|d|A
-Điền 'd', 'gi' hoặc 'r' vào chỗ trống: Quả ...ưa hấu.|d|gi|r|g|A
-Điền 'l' hoặc 'n' vào chỗ trống: Bé tập viết ...ắn ...ót.|l|n|cả hai đều là l|cả hai đều là n|D
-Điền vần 'ươn' hoặc 'ương': Con đường làng quanh co ...|ươn|ương|uon|uong|B
-Điền 'g' hoặc 'gh' vào chỗ trống: Cái ...ế gỗ.|g|gh|c|k|B
-Điền 'c', 'k' hoặc 'q': Con ...iến chăm chỉ.|c|k|q|ch|B
-Điền vần 'iu' hay 'iêu': Chú chim hót ...íu ...ít.|iu - iu|iêu - iêu|iu - iêu|iêu - iu|C
-Điền 'ng' hay 'ngh': Bé ...e bà kể chuyện.|ng|ngh|n|nh|A
-Điền 's' hay 'x': Bé ăn ...ôi buổi ...áng.|s - x|x - s|s - s|x - x|D
-Điền vần 'oan' hay 'oang': Tiếng trống kêu ... vang.|oan|oang|on|ong|B
-Điền 'tr' hay 'ch': Bức ...anh vẽ con ...âu.|tr - ch|ch - tr|tr - tr|ch - ch|B
-Từ nào sau đây chỉ đồ vật trong nhà?|Con mèo|Cái cây|Cái bàn|Bông hoa|C
-Từ nào sau đây chỉ một loài hoa?|Con ong|Hoa hồng|Quả táo|Cái lá|B
-Từ nào viết đúng chính tả?|Dòng sông|Gòng sông|Dòng xông|Ròng sông|A
-Từ nào viết sai chính tả?|Cái kéo|Cái kây|Cái kẹo|Con kiến|B
-Sắp xếp các từ 'em', 'học', 'chăm', 'chỉ' thành câu có nghĩa.|Chăm chỉ em học.|Em học chăm chỉ.|Học em chăm chỉ.|Em chăm học chỉ.|B
-Sắp xếp các từ 'Mẹ', 'đi', 'chợ' thành câu đúng.|Chợ đi Mẹ.|Đi Mẹ chợ.|Mẹ đi chợ.|Mẹ chợ đi.|C
-Dòng nào chỉ gồm các từ chỉ con vật?|Chó, mèo, bàn, ghế|Vịt, ngan, gà, lợn|Sách, vở, bút, mực|Xoài, ổi, cam, quýt|B
-"Lấp lánh" là từ chỉ đặc điểm của vật nào?|Ngôi sao|Mặt đất|Cái cây|Ngôi nhà|A
-Câu "Bé rất yêu trường em." có mấy tiếng?|5 tiếng|6 tiếng|7 tiếng|4 tiếng|B
-Trong câu "Chú bộ đội canh giữ biển trời.", từ nào chỉ người?|Canh giữ|Biển trời|Chú bộ đội|Cả A và C|C
-Con vật nào kêu "Meo meo"?|Con chó|Con gà|Con lợn|Con mèo|D
-Con gì được gọi là "chúa tể sơn lâm"?|Con voi|Con hổ|Con khỉ|Con hươu|B
-Khi đèn giao thông chuyển sang màu đỏ, bé phải làm gì?|Đi tiếp|Dừng lại|Đi chậm lại|Chạy thật nhanh|B
-Đâu là một loại quả có vị chua?|Quả chuối|Quả dưa hấu|Quả chanh|Quả na|C
-Bác Hồ sinh vào ngày tháng năm nào?|19/5/1890|2/9/1945|30/4/1975|1/6/1900|A
-Ai là người đưa thư cho mọi người?|Bác sĩ|Chú công an|Cô giáo|Bác đưa thư|D
-Vào ngày Tết, các bạn nhỏ thường được nhận gì?|Điểm 10|Tiền lì xì|Sách vở mới|Quà sinh nhật|B
-Loài hoa nào là biểu tượng của mùa hè?|Hoa đào|Hoa mai|Hoa phượng|Hoa cúc|C
-Để răng luôn trắng khỏe, bé phải làm gì mỗi ngày?|Ăn nhiều kẹo|Uống nước ngọt|Đánh răng|Xem ti vi|C
-Khi gặp người lớn, bé nên làm gì?|Làm lơ|Chào hỏi lễ phép|Chạy đi trốn|Khóc nhè|B
-Thủ đô của nước Việt Nam là thành phố nào?|TP. Hồ Chí Minh|Đà Nẵng|Hà Nội|Cần Thơ|C
-Môn thể thao nào được gọi là "môn thể thao vua"?|Bóng rổ|Bơi lội|Cầu lông|Bóng đá|D
-Bà có 1 chục quả trứng, bà cho mẹ 3 quả. Bà còn lại mấy quả?|6 quả|8 quả|7 quả|9 quả|C
-13 + 5 = ?|17|18|19|16|B
-25 + 10 = ?|35|30|40|45|A
-30 - 1 = ?|29|28|31|39|A
-Trong số 63, chữ số 6 có giá trị là bao nhiêu?|6|60|3|63|B
-Số chẵn lớn nhất có một chữ số là số nào?|9|10|8|6|C
-Điền vần 'oay' hay 'ay': Gió ...|xoay|xay|soay|say|A
-Từ nào không cùng nhóm với các từ còn lại?|Cam, quýt, xoài, củ cải|Cam|Quýt|Xoài|Củ cải|D
-Câu nào sau đây là câu hỏi?|Bé rất ngoan.|Bé đang làm gì đấy?|Bé đang vẽ tranh.|Bức tranh đẹp quá!|B
-Màu của quả chuối chín là màu gì?|Màu đỏ|Màu xanh|Màu tím|Màu vàng|D
-Ai là người dạy bé học ở trường?|Bố mẹ|Cô giáo|Bác sĩ|Chú bảo vệ|B
-Bé có 2 chục cái kẹo, bé ăn hết 5 cái. Bé còn lại bao nhiêu cái kẹo?|15 cái|25 cái|10 cái|5 cái|A
-Số 40 đọc là gì?|Bốn mươi|Bốn không|Mười bốn|Bốn|A
-Điền 'r' hoặc 'd' hoặc 'gi': Cái ...ỏ của bà.|r|d|gi|g|A
-Sắp xếp các từ 'yêu', 'quý', 'ông', 'bà', 'Bé' thành câu.|Bé ông bà yêu quý.|Yêu quý ông bà Bé.|Bé yêu quý ông bà.|Ông bà yêu quý Bé.|C
-Đâu là một hoạt động trong mùa hè?|Đi trượt tuyết|Nặn người tuyết|Đi bơi|Đón Giáng sinh|C
-Con vật nào có thể bay trên trời?|Con cá|Con chó|Con chim|Con rùa|C
-Trong phép tính 18 - 8 = 10, số 18 được gọi là gì?|Số trừ|Số bị trừ|Hiệu|Tổng|B
-2 tuần có bao nhiêu ngày?|7 ngày|10 ngày|14 ngày|20 ngày|C
-Hình tam giác có mấy cạnh?|2 cạnh|3 cạnh|4 cạnh|Không có cạnh nào|B
-Từ nào viết đúng?|Nghỉ ngơi|Nghỉ nghơi|Nghĩ ngơi|Nghĩ nghơi|A
-Điền vần 'êt' hoặc 'êch': Con ... màu xanh.|êt|êch|et|ech|B
-Bé có 15 quyển vở, mẹ mua thêm cho bé 5 quyển nữa. Hỏi bé có tất cả bao nhiêu quyển vở?|10 quyển|20 quyển|25 quyển|18 quyển|B
-Số nào đứng giữa 49 và 51?|48|52|50|53|C
-Từ nào chỉ sự vật?|Chạy|Nhảy|Cười|Quyển sách|D
-Điền dấu câu thích hợp vào cuối câu: "Hôm nay trời đẹp quá"|Dấu chấm|Dấu hỏi|Dấu phẩy|Dấu chấm than|D
-Con gì có cái vòi dài?|Con hươu|Con hổ|Con ngựa|Con voi|D
-Trong các mùa Xuân, Hạ, Thu, Đông, mùa nào lạnh nhất?|Mùa Xuân|Mùa Hạ|Mùa Thu|Mùa Đông|D
-Quốc kỳ Việt Nam có ngôi sao màu gì?|Màu đỏ|Màu xanh|Màu vàng|Màu trắng|C
-Điền 'c' hay 'k': Bé đi ...âu ...á.|c - c|k - c|c - k|k - k|A
-1 giờ chiều còn được gọi là mấy giờ?|11 giờ|12 giờ|13 giờ|14 giờ|C
-Kết quả của 20 + 30 là?|40|50|60|23|B
-Kết quả của 50 - 20 là?|30|20|70|40|A
-Số lớn nhất có hai chữ số khác nhau là số nào?|99|98|90|89|B
-Sắp xếp các từ 'sách', 'đọc', 'Bé', 'truyện' thành câu.|Bé đọc sách truyện.|Sách truyện Bé đọc.|Đọc sách truyện Bé.|Bé đọc truyện sách.|A
-Từ nào là từ trái nghĩa với 'vui'?|Cười|Hạnh phúc|Buồn|Háo hức|C
-Điền 'gi' hay 'd': Đôi ...ày của bé.|gi|d|r|g|A
-Điền vần 'ut' hay 'uc': Chú chuột ch... trong ống.|ut|uc|ot|oc|C
-Bé Lan cao 1 mét, bé Mai cao hơn bé Lan 10cm. Hỏi bé Mai cao bao nhiêu?|90 cm|1 mét|110 cm|120 cm|C
-Trong truyện "Cây khế", người em có tính cách như thế nào?|Tham lam|Lười biếng|Hiền lành|Độc ác|C
-"Tròn như quả đất" là nói về hình gì?|Hình vuông|Hình tròn|Hình tam giác|Hình chữ nhật|B
-Loài vật nào sống dưới nước?|Con gà|Con khỉ|Con cá|Con lợn|C
-Nếu hôm nay là Thứ Năm, thì ngày mai là thứ mấy?|Thứ Sáu|Thứ Bảy|Thứ Tư|Chủ Nhật|A
-Đàn gà có 12 con, trong đó có 3 con gà trống. Hỏi có bao nhiêu con gà mái?|8 con|10 con|15 con|9 con|D
-Số 100 đọc là gì?|Mười không|Một trăm|Một không không|Trăm|B
+Bạn Mèo có 1 quả táo, ăn mất 1 quả. Hỏi bạn Mèo còn lại bao nhiêu quả?|0 quả|1 quả|2 quả|3 quả|B
+Bạn Vịt có 4 quả trứng, bạn Ngỗng lấy đi 2 quả. Hỏi còn lại mấy quả?|1 quả|2 quả|3 quả|4 quả|B
+__ + 2 = 5. Hỏi __ bằng bao nhiêu?|2|3|4|5|B
+7 − __ = 4. Hỏi __ bằng bao nhiêu?|2|3|4|5|B
+Bạn Chuột có 3 viên kẹo, bạn Sóc cho thêm 4 viên. Hỏi bạn Chuột có bao nhiêu viên kẹo?|6 viên|7 viên|8 viên|9 viên|B
+Bạn Gà đếm được 5 con, bạn Vịt đếm thêm 2 con. Tổng có bao nhiêu con?|6 con|7 con|8 con|9 con|B
+Bạn Bé có 8 viên bi, thả rơi mất 3 viên. Còn lại bao nhiêu viên?|4 viên|5 viên|6 viên|7 viên|B
+Bạn Cá có 2 ngôi sao, bạn Sao biển cho thêm 5 ngôi sao. Hỏi có tất cả mấy ngôi sao?|6 ngôi|7 ngôi|8 ngôi|9 ngôi|B
+Số nào lớn hơn? 6 hay 4?|4|5|6|7|C
+Số nào nhỏ hơn? 2 hay 5?|1|2|3|4|B
+Bạn Thỏ có 5 củ cà rốt, ăn hết 2 củ. Hỏi còn lại mấy củ?|2 củ|3 củ|4 củ|5 củ|B
+3 + 4 = ?|5|6|7|8|C
+9 − 5 = ?|3|4|5|6|B
+Bạn Gấu có 6 quả bóng, cho bạn Hổ 3 quả. Còn lại mấy quả?|2 quả|3 quả|4 quả|5 quả|C
+__ + 3 = 9. Hỏi __=?|5|6|7|8|B
+10 − __ = 7. Hỏi __=?|2|3|4|5|B
+Bạn Heo có 7 cây kẹo, ăn mất 4 cây. Còn lại bao nhiêu?|2 cây|3 cây|4 cây|5 cây|B
+2 + 2 = ?|3|4|5|6|B
+8 − 3 = ?|4|5|6|7|B
+Bạn Voi có 3 quả chuối, bạn Tê giác cho thêm 3 quả. Hỏi tổng là bao nhiêu?|5 quả|6 quả|7 quả|8 quả|B
+Bạn Sư tử có 1 quả cam, ăn thêm 2 quả. Tổng có bao nhiêu quả?|2 quả|3 quả|4 quả|5 quả|B
+__ + 5 = 10. Hỏi __=?|4|5|6|7|C
+10 − __ = 2. Hỏi __=?|6|7|8|9|C
+Bạn Cá heo có 4 chiếc vòng, bạn Cá voi cho thêm 1 chiếc. Hỏi có tất cả mấy chiếc?|4 chiếc|5 chiếc|6 chiếc|7 chiếc|B
+5 + 1 = ?|5|6|7|8|B
+7 − 2 = ?|4|5|6|7|A
+Bạn Bé có 9 viên bi, cho bạn 3 viên. Còn lại bao nhiêu viên?|5 viên|6 viên|7 viên|8 viên|B
+__ + 1 = 4. Hỏi __=?|2|3|4|5|B
+6 − __ = 2. Hỏi __=?|3|4|5|6|A
+Bạn Sóc có 8 hạt dẻ, bạn Thỏ lấy đi 5 hạt. Còn lại bao nhiêu?|2 hạt|3 hạt|4 hạt|5 hạt|B
+4 + 3 = ?|6|7|8|9|B
+9 − 4 = ?|4|5|6|7|B
+Bạn Mèo có 2 chiếc nơ, bạn Chuột cho thêm 2 chiếc. Hỏi tổng là bao nhiêu?|3 chiếc|4 chiếc|5 chiếc|6 chiếc|B
+__ + 4 = 6. Hỏi __=?|1|2|3|4|B
+6 − __ = 1. Hỏi __=?|4|5|6|7|B
+Bạn Vịt có 5 quả trứng, sinh thêm 2 quả. Hỏi tổng có bao nhiêu?|6 quả|7 quả|8 quả|9 quả|B
+3 + 5 = ?|7|8|9|10|B
+8 − 6 = ?|1|2|3|4|B
+Bạn Gà có 1 quả trứng, nở ra thêm 3 quả. Hỏi có tổng bao nhiêu?|3 quả|4 quả|5 quả|6 quả|B
+__ + 2 = 7. Hỏi __=?|4|5|6|7|B
+7 − __ = 3. Hỏi __=?|2|3|4|5|C
+Bạn Bé có 4 cây kẹo, bạn Cho thêm 3 cây. Tổng có bao nhiêu cây?|6 cây|7 cây|8 cây|9 cây|B
+5 + 2 = ?|6|7|8|9|B
+9 − 7 = ?|1|2|3|4|B
+Bạn Cá có 2 bạn cá con, sinh thêm 2 bạn. Tổng có bao nhiêu bạn cá?|3|4|5|6|B
+__ + 6 = 8. Hỏi __=?|1|2|3|4|B
+8 − __ = 5. Hỏi __=?|2|3|4|5|C
+Bạn Hươu có 3 cây cỏ, bạn Nai cho thêm 4 cây. Tổng có bao nhiêu?|6|7|8|9|B
+2 + 5 = ?|6|7|8|9|B
+7 − 1 = ?|5|6|7|8|A
+Bạn Sóc có 6 hạt dẻ, ăn mất 2 hạt. Còn lại bao nhiêu?|3|4|5|6|B
+__ + 3 = 10. Hỏi __=?|6|7|8|9|A
+10 − __ = 4. Hỏi __=?|4|5|6|7|C
+Bạn Gấu có 1 quả táo, bạn Chuột cho thêm 5 quả. Tổng có bao nhiêu quả?|5|6|7|8|B
+4 + 4 = ?|7|8|9|10|B
+9 − 2 = ?|6|7|8|9|B
+Bạn Vịt có 7 quả trứng, vỡ mất 3 quả. Còn lại bao nhiêu?|3|4|5|6|B
+__ + 4 = 9. Hỏi __=?|4|5|6|7|C
+9 − __ = 3. Hỏi __=?|5|6|7|8|A
+Bạn Mèo có 3 chiếc nơ, bạn Thỏ cho thêm 3 chiếc. Tổng có bao nhiêu?|5|6|7|8|B
+5 + 3 = ?|7|8|9|10|B
+8 − 5 = ?|2|3|4|5|B
+Bạn Bé có 2 cuốn sách, bạn Cho thêm 4 cuốn. Tổng có bao nhiêu cuốn?|5|6|7|8|D
+__ + 2 = 6. Hỏi __=?|2|3|4|5|C
+6 − __ = 3. Hỏi __=?|2|3|4|5|B
+Bạn Sóc có 5 hạt dẻ, bạn Thỏ cho thêm 1 hạt. Tổng có bao nhiêu?|5|6|7|8|B
+3 + 2 = ?|4|5|6|7|B
+7 − 3 = ?|3|4|5|6|B
+Bạn Gà có 4 quả trứng, đẻ thêm 1 quả. Tổng có bao nhiêu?|4|5|6|7|B
+__ + 5 = 9. Hỏi __=?|3|4|5|6|B
+9 − __ = 6. Hỏi __=?|2|3|4|5|A
+Bạn Voi có 2 quả chuối, bạn Ngựa cho thêm 3 quả. Tổng có bao nhiêu?|4|5|6|7|B
+4 + 2 = ?|5|6|7|8|B
+8 − 7 = ?|0|1|2|3|B
+Bạn Bé có 1 cây kẹo, bạn Cho thêm 2 cây. Tổng có bao nhiêu cây?|2|3|4|5|B
+__ + 1 = 5. Hỏi __=?|3|4|5|6|B
+5 − __ = 2. Hỏi __=?|2|3|4|5|A
+Bạn Thỏ có 6 củ cà rốt, ăn hết 1 củ. Còn lại bao nhiêu củ?|4|5|6|7|B
+2 + 6 = ?|7|8|9|10|B
+9 − 8 = ?|0|1|2|3|B
+Bạn Sóc có 3 quả hạt dẻ, bạn Mèo cho thêm 2 quả. Tổng có bao nhiêu?|4|5|6|7|B
+__ + 3 = 8. Hỏi __=?|4|5|6|7|A
+8 − __ = 4. Hỏi __=?|2|3|4|5|C
