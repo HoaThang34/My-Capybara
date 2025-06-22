@@ -1,0 +1,116 @@
+/* --- Cài đặt chung & Theme "Capybara Nâu Đất" --- */
+:root {
+    --bg-color: #f4e9d8; /* Be nhạt */
+    --container-bg: #ffffff;
+    --primary-brown: #8d5524; /* Nâu đất đậm */
+    --secondary-brown: #c68642; /* Nâu vàng (màu cam đất) */
+    --text-color: #6b4f4f; /* Nâu sẫm cho chữ */
+    --correct-color: #588157; /* Xanh lá cây đất */
+    --incorrect-color: #c94c4c; /* Đỏ đất */
+    --font-family: 'Quicksand', sans-serif;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: var(--font-family); background: var(--bg-color); color: var(--text-color);
+    display: flex; justify-content: center; align-items: center; min-height: 100vh; padding: 20px;
+    cursor: url('capybara-cursor.png'), auto; 
+}
+.container {
+    background: var(--container-bg); padding: 30px 40px; border-radius: 30px;
+    box-shadow: 0 10px 25px rgba(107, 79, 79, 0.2); border: 5px solid white;
+    width: 100%; max-width: 700px; text-align: center; position: relative;
+}
+.hidden { display: none !important; }
+
+/* --- Màn hình Menu --- */
+#menu-screen { display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 40px 0; }
+.menu-title { color: var(--primary-brown); font-size: clamp(2.5rem, 6vw, 3.5rem); margin-bottom: 10px; }
+.character-intro { font-size: 80px; margin-bottom: 20px; color: var(--primary-brown); }
+.welcome-text { font-size: 1.5em; color: var(--text-color); margin-bottom: 40px; font-weight: 500; }
+#start-btn { transform: scale(1.1); }
+#start-btn:hover { transform: scale(1.15) translateY(-2px); }
+
+/* --- Lộ trình Giải cứu --- */
+.progress-map-container { position: relative; height: 50px; margin-bottom: 30px; }
+.progress-map {
+    position: relative; display: flex; justify-content: space-between; align-items: center;
+    width: 90%; margin: 0 auto; height: 100%;
+}
+.progress-map::before {
+    content: ''; position: absolute; top: 50%; left: 0; width: 100%; height: 8px;
+    background: #eaddc7; border-radius: 4px; transform: translateY(-50%); z-index: 1;
+}
+.map-step {
+    width: 25px; height: 25px; background: #d3b8ae; border-radius: 50%;
+    position: relative; z-index: 2; transition: all 0.4s ease;
+    border: 4px solid white;
+}
+.map-step.completed { background: var(--secondary-brown); transform: scale(1.2); }
+.player-icon {
+    position: absolute; top: 50%; left: 0; transform: translate(-50%, -50%);
+    font-size: 30px; z-index: 3; transition: left 0.5s ease-in-out;
+}
+.final-goal {
+    position: absolute; top: 50%; right: -15px; transform: translateY(-50%);
+    font-size: 45px; z-index: 2; color: var(--primary-brown);
+}
+
+/* --- Khu vực Trò chơi --- */
+#game-area { padding-top: 20px; }
+.question-text { font-size: clamp(1.3rem, 4vw, 1.7rem); min-height: 80px; margin: 15px 0; font-weight: 500; line-height: 1.5; }
+.answers { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px; margin-bottom: 20px; }
+.answer-btn {
+    font-family: var(--font-family); font-size: 1.2em; font-weight: 700; padding: 18px 20px;
+    border: 3px solid #eaddc7; border-radius: 20px; background-color: #fdfaf5;
+    cursor: pointer; transition: all 0.2s ease; text-align: left;
+}
+.answer-btn:hover:not(:disabled) { background-color: var(--secondary-brown); color: var(--container-bg); transform: translateY(-5px); border-color: var(--secondary-brown); }
+.feedback-message { font-weight: 700; min-height: 30px; font-size: 1.3em; color: var(--incorrect-color); }
+
+/* --- Màn hình Ăn mừng Đúng Câu hỏi --- */
+#correct-overlay {
+    position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(198, 134, 66, 0.85); z-index: 1000;
+    display: flex; justify-content: center; align-items: center;
+    animation: fadeIn 0.3s ease;
+}
+#correct-message {
+    color: white; font-size: clamp(4rem, 15vw, 8rem); text-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    transform: scale(0.5); animation: popUp 0.5s cubic-bezier(0.18, 0.89, 0.32, 1.28) forwards;
+}
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+@keyframes popUp { to { transform: scale(1); } }
+
+/* --- Màn hình Chiến thắng --- */
+#win-screen { text-align: center; }
+.win-title {
+    font-size: clamp(3rem, 10vw, 6rem);
+    animation: shimmer-text 3s linear infinite, win-title-pop 1s ease;
+    background: linear-gradient(90deg, #c68642, #fff, #8d5524, #c68642);
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+}
+@keyframes shimmer-text { to { background-position: -200%; } }
+@keyframes win-title-pop { 0% { transform: scale(0); } 80% { transform: scale(1.2); } 100% { transform: scale(1); } }
+
+.character-image-win {
+    font-size: 150px; margin: 20px 0; color: var(--primary-brown);
+    animation: chill-dance 2.5s ease-in-out infinite;
+}
+@keyframes chill-dance { /* Hiệu ứng "chill" hơn */
+    0%, 100% { transform: translateY(0) rotate(0deg); }
+    25% { transform: translateY(-10px) rotate(-5deg); }
+    50% { transform: translateY(0) rotate(0deg); }
+    75% { transform: translateY(-10px) rotate(5deg); }
+}
+.win-subtitle { font-size: 1.5em; margin-bottom: 40px; }
+.action-btn {
+    font-family: var(--font-family); font-size: 1.5em; font-weight: 700; padding: 15px 45px;
+    border: none; border-radius: 50px; color: white; cursor: pointer; transition: all 0.3s;
+    background: var(--primary-brown); box-shadow: 0 5px 0 #6b4f4f;
+}
+.action-btn:hover { background: #a46a34; transform: translateY(-2px); box-shadow: 0 7px 0 #6b4f4f; }
+.action-btn:active { transform: translateY(2px); box-shadow: 0 3px 0 #6b4f4f; }
+
+/* --- Nút Âm thanh --- */
+#sound-control { position: fixed; top: 20px; right: 20px; width: 50px; height: 50px; background: white; border-radius: 50%; display: flex; justify-content: center; align-items: center; font-size: 24px; cursor: pointer; box-shadow: 0 4px 10px rgba(0,0,0,0.1); z-index: 100; }

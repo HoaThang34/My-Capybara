@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giải cứu Capybara</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Nút điều khiển âm thanh -->
+    <div id="sound-control">🔊</div>
+
+    <div class="container">
+        <!-- MÀN HÌNH MENU -->
+        <div id="menu-screen">
+            <h1 class="menu-title">Giải cứu Capybara</h1>
+            <div class="character-intro">🦫</div>
+            <h2 class="welcome-text">Bạn Capybara đang chờ bé giúp đó!</h2>
+            <button id="start-btn" class="action-btn">Bắt đầu!</button>
+        </div>
+
+        <!-- KHU VỰC TRÒ CHƠI -->
+        <div id="game-area" class="hidden">
+            <!-- LỘ TRÌNH MỚI (Icon là quả cam) -->
+            <div class="progress-map-container">
+                <div class="progress-map" id="progress-map"></div>
+                <div class="player-icon" id="player-icon">🍊</div>
+                <div class="final-goal" id="final-goal">🦫</div>
+            </div>
+
+            <h2 id="question-text" class="question-text">Bé sẵn sàng chưa nào?</h2>
+            <div class="answers" id="answer-buttons"></div>
+            <p id="feedback-message" class="feedback-message"></p>
+        </div>
+
+        <!-- MÀN HÌNH CHIẾN THẮNG -->
+        <div id="win-screen" class="hidden">
+            <h2 class="win-title">BÉ GIỎI QUÁ!</h2>
+            <div class="character-image-win" id="character-image-win">🦫</div>
+            <p class="win-subtitle">Bạn Capybara đã được tự do nhờ bé đó!</p>
+            <button id="play-again-btn" class="action-btn">Chơi lại</button>
+        </div>
+    </div>
+
+    <!-- MÀN HÌNH ĂN MỪNG ĐÚNG CÂU HỎI -->
+    <div id="correct-overlay" class="hidden">
+        <h2 id="correct-message">Tuyệt vời!</h2>
+    </div>
+
+    <!-- AUDIO KHÔNG THAY ĐỔI -->
+    <audio id="bg-music" src="background-music.mp3" loop></audio>
+    <audio id="correct-sound" src="correct-sound.mp3"></audio>
+    <audio id="wrong-sound" src="wrong-sound.mp3"></audio>
+
+    <script src="app.js"></script>
+</body>
+</html>
