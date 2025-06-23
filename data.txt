@@ -145,3 +145,267 @@ Bạn Ếch có 4 con ruồi, bạn Nhái cho thêm 4 con. Hỏi bạn Ếch có
 9 − 0 = ? | 8 | 9 | 7 | 10 | B
 Có 3 chiếc xe ô tô, đậu thêm 2 chiếc. Hỏi có tổng cộng bao nhiêu chiếc xe ô tô? | 4 chiếc | 5 chiếc | 6 chiếc | 7 chiếc | B
 __ + 0 = 5. Hỏi __ bằng bao nhiêu? | 4 | 5 | 6 | 7 | B
+Bạn Sói có 5 khúc xương, bạn Gấu cho thêm 4 khúc. Hỏi bạn Sói có tổng cộng mấy khúc xương? | 8 khúc | 9 khúc | 7 khúc | 6 khúc | B
+Có 10 bông hoa hướng dương, 4 bông bị héo. Hỏi còn lại bao nhiêu bông hoa hướng dương tươi? | 5 bông | 6 bông | 7 bông | 8 bông | B
+__ + 7 = 9. Hỏi __ bằng bao nhiêu? | 1 | 2 | 3 | 4 | B
+8 − __ = 1. Hỏi __ bằng bao nhiêu? | 5 | 6 | 7 | 4 | C
+Số nào lớn hơn? 1 hay 9? | 1 | 2 | 9 | 8 | C
+Bạn Rùa có 2 chiếc lá, bạn Thỏ mang đến thêm 3 chiếc. Hỏi bạn Rùa có tất cả bao nhiêu chiếc lá? | 4 chiếc | 5 chiếc | 6 chiếc | 7 chiếc | B
+Trên bàn có 6 quả cam, bạn ăn hết 3 quả. Hỏi còn lại bao nhiêu quả cam? | 2 quả | 3 quả | 4 quả | 5 quả | B
+3 + 6 = ? | 8 | 9 | 7 | 10 | B
+10 − 8 = ? | 2 | 1 | 3 | 4 | A
+Bạn Cún có 7 quả bóng, bạn Mèo lấy đi 2 quả. Hỏi bạn Cún còn lại mấy quả bóng? | 4 quả | 5 quả | 6 quả | 7 quả | B
+__ + 5 = 7. Hỏi __ bằng bao nhiêu? | 1 | 2 | 3 | 4 | B
+9 − __ = 5. Hỏi __ bằng bao nhiêu? | 3 | 4 | 2 | 5 | B
+Số nào nhỏ hơn? 8 hay 4? | 4 | 8 | 5 | 7 | A
+Bạn Chuột có 1 hạt phô mai, bạn Voi cho thêm 8 hạt. Hỏi bạn Chuột có tổng cộng bao nhiêu hạt phô mai? | 8 hạt | 9 hạt | 7 hạt | 10 hạt | B
+Trong giỏ có 6 quả trứng, bạn Gà đẻ thêm 3 quả. Hỏi trong giỏ có tất cả bao nhiêu quả trứng? | 8 quả | 9 quả | 7 quả | 10 quả | B
+2 + 7 = ? | 8 | 9 | 7 | 10 | B
+7 − 4 = ? | 2 | 3 | 4 | 5 | B
+Bạn Chim cánh cụt có 5 con cá, bạn Hải cẩu lấy mất 1 con. Hỏi bạn Chim cánh cụt còn lại mấy con cá? | 3 con | 4 con | 2 con | 5 con | B
+__ + 1 = 6. Hỏi __ bằng bao nhiêu? | 3 | 5 | 4 | 6 | B
+10 − __ = 3. Hỏi __ bằng bao nhiêu? | 6 | 7 | 8 | 5 | B
+Điền dấu thích hợp (> , < , =): 2 + 5 __ 8 | > | < | = | Không xác định | B
+Bạn Ếch có 4 con ruồi, bạn Nhái cho thêm 4 con. Hỏi bạn Ếch có tất cả bao nhiêu con ruồi? | 7 con | 8 con | 9 con | 6 con | B
+9 − 0 = ? | 8 | 9 | 7 | 10 | B
+Có 3 chiếc xe ô tô, đậu thêm 2 chiếc. Hỏi có tổng cộng bao nhiêu chiếc xe ô tô? | 4 chiếc | 5 chiếc | 6 chiếc | 7 chiếc | B
+__ + 0 = 5. Hỏi __ bằng bao nhiêu? | 4 | 5 | 6 | 7 | B
+Bạn Hươu có 6 chấm trên người, sau khi tắm bớt 2 chấm. Hỏi bạn Hươu còn lại bao nhiêu chấm? | 3 chấm | 4 chấm | 5 chấm | 6 chấm | B
+Trong hộp có 1 quả bóng xanh, bạn cho thêm 7 quả bóng đỏ. Hỏi trong hộp có tất cả bao nhiêu quả bóng? | 7 quả | 8 quả | 9 quả | 10 quả | B
+5 + 4 = ? | 8 | 9 | 7 | 10 | B
+10 − 6 = ? | 3 | 4 | 5 | 6 | B
+Bạn Cá sấu có 8 cái răng, 3 cái bị rụng. Hỏi bạn Cá sấu còn lại bao nhiêu cái răng? | 4 cái | 5 cái | 6 cái | 7 cái | B
+__ + 2 = 10. Hỏi __ bằng bao nhiêu? | 6 | 7 | 8 | 9 | C
+7 − __ = 5. Hỏi __ bằng bao nhiêu? | 1 | 2 | 3 | 4 | B
+Số nào lớn nhất trong các số: 3, 7, 1, 5? | 3 | 1 | 5 | 7 | D
+Bạn Ngựa có 2 củ cà rốt, bạn Thỏ cho thêm 6 củ. Hỏi bạn Ngựa có tất cả mấy củ cà rốt? | 7 củ | 8 củ | 9 củ | 10 củ | B
+Trên cành cây có 9 chiếc lá, gió thổi rụng 5 chiếc. Hỏi còn lại bao nhiêu chiếc lá? | 3 chiếc | 4 chiếc | 2 chiếc | 5 chiếc | B
+1 + 9 = ? | 9 | 10 | 8 | 7 | B
+8 − 4 = ? | 3 | 4 | 5 | 2 | B
+Bạn Chó có 4 cái xương, bạn Sóc giấu mất 1 cái. Hỏi bạn Chó còn lại mấy cái xương? | 2 cái | 3 cái | 4 cái | 5 cái | B
+__ + 4 = 10. Hỏi __ bằng bao nhiêu? | 5 | 6 | 7 | 8 | B
+9 − __ = 0. Hỏi __ bằng bao nhiêu? | 7 | 8 | 9 | 6 | C
+Điền dấu thích hợp (> , < , =): 3 + 3 __ 5 | > | < | = | Không xác định | A
+Bạn Vịt có 5 quả trứng, bạn Gà cho thêm 3 quả. Hỏi bạn Vịt có tất cả bao nhiêu quả trứng? | 7 quả | 8 quả | 6 quả | 9 quả | B
+Trong hồ có 7 con cá, 2 con bơi đi mất. Hỏi còn lại bao nhiêu con cá? | 3 con | 5 con | 4 con | 6 con | B
+0 + 7 = ? | 6 | 7 | 8 | 9 | B
+10 − 2 = ? | 7 | 8 | 6 | 9 | B
+Bạn Kiến có 6 hạt đường, bạn Ong cho thêm 1 hạt. Hỏi bạn Kiến có tất cả bao nhiêu hạt đường? | 6 hạt | 7 hạt | 8 hạt | 9 hạt | B
+__ + 5 = 5. Hỏi __ bằng bao nhiêu? | 1 | 4 | 0 | 3 | C
+6 − __ = 0. Hỏi __ bằng bao nhiêu? | 5 | 6 | 4 | 3 | B
+Số nào nhỏ nhất trong các số: 9, 2, 8, 4? | 9 | 8 | 4 | 2 | D
+Bạn Mèo có 3 chiếc nơ, bạn Gấu cho thêm 6 chiếc. Hỏi bạn Mèo có tổng cộng bao nhiêu chiếc nơ? | 8 chiếc | 9 chiếc | 7 chiếc | 10 chiếc | B
+Bạn Vẹt có 3 hạt hướng dương, bạn Khỉ cho thêm 5 hạt. Hỏi bạn Vẹt có tất cả bao nhiêu hạt hướng dương? | 7 hạt | 8 hạt | 9 hạt | 6 hạt | B
+Có 10 quả bóng bay, 6 quả bay mất. Hỏi còn lại bao nhiêu quả bóng bay? | 3 quả | 4 quả | 5 quả | 2 quả | B
+__ + 1 = 8. Hỏi __ bằng bao nhiêu? | 6 | 7 | 9 | 5 | B
+7 − __ = 1. Hỏi __ bằng bao nhiêu? | 4 | 5 | 6 | 3 | C
+Số nào nhỏ nhất trong các số: 5, 1, 8, 3? | 5 | 1 | 8 | 3 | B
+Bạn Chim sẻ có 4 miếng bánh mì, bạn Bồ câu cho thêm 3 miếng. Hỏi bạn Chim sẻ có tổng cộng mấy miếng bánh mì? | 6 miếng | 7 miếng | 8 miếng | 5 miếng | B
+Trên đĩa có 9 cái kẹo, bạn ăn hết 6 cái. Hỏi còn lại bao nhiêu cái kẹo? | 2 cái | 3 cái | 4 cái | 5 cái | B
+2 + 8 = ? | 9 | 10 | 7 | 8 | B
+9 − 3 = ? | 5 | 6 | 4 | 7 | B
+Bạn Cua có 6 cái càng, 2 cái bị gãy. Hỏi bạn Cua còn lại mấy cái càng? | 3 cái | 4 cái | 5 cái | 2 cái | B
+__ + 4 = 7. Hỏi __ bằng bao nhiêu? | 2 | 3 | 4 | 1 | B
+10 − __ = 9. Hỏi __ bằng bao nhiêu? | 1 | 2 | 3 | 0 | A
+Số nào lớn nhất trong các số: 2, 0, 7, 4? | 2 | 0 | 7 | 4 | C
+Bạn Chuồn chuồn có 5 cánh, bạn Bướm cho thêm 5 cánh. Hỏi bạn Chuồn chuồn có tất cả bao nhiêu cánh? | 9 cánh | 10 cánh | 8 cánh | 7 cánh | B
+Trong hộp có 1 quả bóng đỏ, bạn cho thêm 9 quả bóng vàng. Hỏi trong hộp có tất cả bao nhiêu quả bóng? | 9 quả | 10 quả | 8 quả | 7 quả | B
+3 + 7 = ? | 9 | 10 | 8 | 7 | B
+8 − 6 = ? | 1 | 2 | 3 | 4 | B
+Bạn Hổ có 7 miếng thịt, ăn hết 3 miếng. Hỏi bạn Hổ còn lại mấy miếng thịt? | 3 miếng | 4 miếng | 5 miếng | 2 miếng | B
+__ + 0 = 9. Hỏi __ bằng bao nhiêu? | 8 | 9 | 7 | 6 | B
+6 − __ = 4. Hỏi __ bằng bao nhiêu? | 1 | 2 | 3 | 0 | B
+Điền dấu thích hợp (> , < , =): 8 + 1 __ 10 | > | < | = | Không xác định | B
+Bạn Dê có 4 sừng, bạn Nai cho thêm 2 sừng. Hỏi bạn Dê có tổng cộng bao nhiêu sừng? | 5 sừng | 6 sừng | 7 sừng | 8 sừng | B
+7 − 0 = ? | 6 | 7 | 8 | 9 | B
+Có 5 bông hoa cúc, nở thêm 4 bông. Hỏi có tổng cộng bao nhiêu bông hoa cúc? | 8 bông | 9 bông | 7 bông | 10 bông | B
+__ + 2 = 5. Hỏi __ bằng bao nhiêu? | 2 | 3 | 4 | 5 | B
+10 − __ = 5. Hỏi __ bằng bao nhiêu? | 3 | 4 | 5 | 6 | C
+Bạn Bướm có 10 đốm màu, 2 đốm bị mờ đi. Hỏi bạn Bướm còn lại bao nhiêu đốm màu? | 7 đốm | 8 đốm | 9 đốm | 6 đốm | B
+Bạn Cú mèo có 1 cuốn sách, bạn Chuột mang đến 4 cuốn. Hỏi bạn Cú mèo có tổng cộng mấy cuốn sách? | 4 cuốn | 5 cuốn | 6 cuốn | 7 cuốn | B
+6 + 2 = ? | 7 | 8 | 9 | 5 | B
+9 − 7 = ? | 1 | 2 | 3 | 4 | B
+Bạn Cá vàng có 8 chiếc vảy óng ánh, 5 chiếc bị rơi. Hỏi bạn Cá vàng còn lại bao nhiêu chiếc vảy? | 2 chiếc | 3 chiếc | 4 chiếc | 5 chiếc | B
+__ + 3 = 6. Hỏi __ bằng bao nhiêu? | 2 | 3 | 4 | 5 | B
+7 − __ = 4. Hỏi __ bằng bao nhiêu? | 2 | 3 | 4 | 5 | B
+Số nào ở giữa số 3 và số 5? | 2 | 4 | 6 | 7 | B
+Bạn Ốc sên có 0 ngôi nhà, bạn Rùa cho 1 ngôi nhà. Hỏi bạn Ốc sên có bao nhiêu ngôi nhà? | 1 ngôi nhà | 0 ngôi nhà | 2 ngôi nhà | 3 ngôi nhà | A
+Trên cây có 7 quả táo, bạn Hái thêm 3 quả. Hỏi có tổng cộng bao nhiêu quả táo? | 9 quả | 10 quả | 8 quả | 7 quả | B
+5 + 5 = ? | 9 | 10 | 8 | 7 | B
+10 − 1 = ? | 8 | 9 | 7 | 10 | B
+Bạn Cừu có 4 chiếc lông, bạn Thỏ cho thêm 4 chiếc. Hỏi bạn Cừu có tổng cộng bao nhiêu chiếc lông? | 7 chiếc | 8 chiếc | 9 chiếc | 6 chiếc | B
+__ + 6 = 6. Hỏi __ bằng bao nhiêu? | 1 | 2 | 0 | 3 | C
+8 − __ = 8. Hỏi __ bằng bao nhiêu? | 1 | 2 | 3 | 0 | D
+Điền dấu thích hợp (> , < , =): 9 − 4 __ 5 | > | < | = | Không xác định | C
+Bạn Rồng có 3 cái sừng, bạn Phượng hoàng cho thêm 4 cái. Hỏi bạn Rồng có tất cả mấy cái sừng? | 6 cái | 7 cái | 8 cái | 9 cái | B
+Trong ao có 8 con vịt, 5 con bơi đi. Hỏi còn lại bao nhiêu con vịt? | 2 con | 3 con | 4 con | 1 con | B
+1 + 0 = ? | 1 | 0 | 2 | 3 | A
+9 − 9 = ? | 1 | 0 | 2 | 3 | B
+Bạn Cá heo có 7 chiếc vòng, 3 chiếc bị mất. Hỏi bạn Cá heo còn lại bao nhiêu chiếc vòng? | 3 chiếc | 4 chiếc | 5 chiếc | 6 chiếc | B
+__ + 5 = 10. Hỏi __ bằng bao nhiêu? | 4 | 5 | 6 | 7 | B
+10 − __ = 0. Hỏi __ bằng bao nhiêu? | 8 | 9 | 10 | 7 | C
+Số nào lớn hơn? 0 hay 6? | 0 | 1 | 6 | 5 | C
+Bạn Voi có 2 quả chuối, bạn Tê giác cho thêm 6 quả. Hỏi bạn Voi có tổng cộng bao nhiêu quả chuối? | 7 quả | 8 quả | 9 quả | 10 quả | B
+Trên bàn có 4 chiếc bút chì, bạn đặt thêm 5 chiếc. Hỏi có tất cả bao nhiêu chiếc bút chì? | 8 chiếc | 9 chiếc | 7 chiếc | 6 chiếc | B
+0 + 0 = ? | 0 | 1 | 2 | 3 | A
+5 − 0 = ? | 4 | 5 | 3 | 2 | B
+Bạn Gà con có 5 hạt thóc, bạn Mẹ cho thêm 3 hạt. Hỏi bạn Gà con có tất cả bao nhiêu hạt thóc? | 7 hạt | 8 hạt | 6 hạt | 9 hạt | B
+__ + 2 = 9. Hỏi __ bằng bao nhiêu? | 6 | 7 | 8 | 5 | B
+8 − __ = 0. Hỏi __ bằng bao nhiêu? | 6 | 7 | 8 | 5 | C
+Điền dấu thích hợp (> , < , =): 10 − 5 __ 4 | > | < | = | Không xác định | A
+Bạn Sư tử có 1 quả cam, bạn Hà mã cho thêm 7 quả. Hỏi bạn Sư tử có tổng cộng bao nhiêu quả cam? | 7 quả | 8 quả | 9 quả | 6 quả | B
+Trong hộp có 6 chiếc bút màu, bạn lấy ra 2 chiếc. Hỏi còn lại bao nhiêu chiếc bút màu? | 3 chiếc | 4 chiếc | 5 chiếc | 2 chiếc | B
+1 + 1 = ? | 1 | 2 | 3 | 0 | B
+6 − 1 = ? | 4 | 5 | 3 | 2 | B
+Bạn Khủng long có 9 quả trứng, 3 quả nở. Hỏi còn lại bao nhiêu quả trứng chưa nở? | 5 quả | 6 quả | 7 quả | 8 quả | B
+__ + 3 = 10. Hỏi __ bằng bao nhiêu? | 6 | 7 | 8 | 5 | B
+9 − __ = 6. Hỏi __ bằng bao nhiêu? | 2 | 3 | 4 | 5 | B
+Số nào liền sau số 7? | 6 | 8 | 9 | 5 | B
+Bạn Cáo có 4 cái đuôi, bạn Sói cho thêm 1 cái đuôi. Hỏi bạn Cáo có tất cả mấy cái đuôi? | 4 cái | 5 cái | 6 cái | 7 cái | B
+Trên cây có 8 con chim, 6 con bay đi. Hỏi còn lại bao nhiêu con chim? | 1 con | 2 con | 3 con | 4 con | B
+4 + 0 = ? | 3 | 4 | 5 | 2 | B
+10 − 4 = ? | 5 | 6 | 7 | 8 | B
+Bạn Hươu cao cổ có 3 đốm đen, bạn Vằn cho thêm 5 đốm. Hỏi bạn Hươu cao cổ có tổng cộng bao nhiêu đốm? | 7 đốm | 8 đốm | 9 đốm | 6 đốm | B
+__ + 8 = 9. Hỏi __ bằng bao nhiêu? | 0 | 1 | 2 | 3 | B
+7 − __ = 2. Hỏi __ bằng bao nhiêu? | 3 | 4 | 5 | 6 | C
+Điền dấu thích hợp (> , < , =): 6 + 4 __ 9 | > | < | = | Không xác định | A
+Bạn Gấu Bắc Cực có 2 con cá, bạn Chim cánh cụt cho thêm 5 con. Hỏi bạn Gấu Bắc Cực có tất cả bao nhiêu con cá? | 6 con | 7 con | 8 con | 9 con | B
+Trong vườn có 10 bông hoa tulip, bạn hái đi 7 bông. Hỏi còn lại bao nhiêu bông hoa tulip? | 2 bông | 3 bông | 4 bông | 5 bông | B
+3 + 0 = ? | 2 | 3 | 4 | 5 | B
+9 − 1 = ? | 7 | 8 | 6 | 9 | B
+Bạn Cún con có 5 cái xương, ăn mất 2 cái. Hỏi bạn Cún con còn lại bao nhiêu cái xương? | 2 cái | 3 cái | 4 cái | 1 cái | B
+__ + 1 = 10. Hỏi __ bằng bao nhiêu? | 8 | 9 | 7 | 6 | B
+5 − __ = 1. Hỏi __ bằng bao nhiêu? | 2 | 3 | 4 | 5 | C
+Số nào liền trước số 4? | 5 | 3 | 2 | 1 | C (Correction: Should be B for 3)
+Bạn Chuột túi có 10 đồng xu, bạn làm rơi mất 4 đồng. Hỏi bạn Chuột túi còn lại bao nhiêu đồng xu? | 5 đồng | 6 đồng | 7 đồng | 4 đồng | B
+Bạn Chim ruồi có 1 bông hoa, bạn Bướm cho thêm 2 bông. Hỏi bạn Chim ruồi có tất cả mấy bông hoa? | 2 bông | 3 bông | 4 bông | 5 bông | B
+2 + 4 = ? | 5 | 6 | 7 | 8 | B
+8 − 2 = ? | 5 | 6 | 7 | 4 | B
+Bạn Ong có 7 bông hoa, bạn Thu hoạch mật 4 bông. Hỏi bạn Ong còn lại bao nhiêu bông hoa? | 2 bông | 3 bông | 4 bông | 5 bông | B
+__ + 0 = 1. Hỏi __ bằng bao nhiêu? | 1 | 0 | 2 | 3 | A
+4 − __ = 0. Hỏi __ bằng bao nhiêu? | 2 | 3 | 4 | 1 | C
+Điền dấu thích hợp (> , < , =): 7 − 1 __ 5 | > | < | = | Không xác định | A
+Bạn Gấu Trúc có 6 cây tre, bạn Voi cho thêm 3 cây. Hỏi bạn Gấu Trúc có tổng cộng bao nhiêu cây tre? | 8 cây | 9 cây | 7 cây | 10 cây | B
+Trên bàn có 5 quả chuối, bạn ăn mất 1 quả. Hỏi còn lại bao nhiêu quả chuối? | 3 quả | 4 quả | 2 quả | 5 quả | B
+5 + 0 = ? | 4 | 5 | 6 | 7 | B
+10 − 3 = ? | 6 | 7 | 8 | 9 | B
+Bạn Cáo có 8 quả dâu tây, 2 quả bị hỏng. Hỏi bạn Cáo còn lại bao nhiêu quả dâu tây? | 5 quả | 6 quả | 7 quả | 4 quả | B
+__ + 7 = 7. Hỏi __ bằng bao nhiêu? | 1 | 2 | 0 | 3 | C
+9 − __ = 2. Hỏi __ bằng bao nhiêu? | 5 | 6 | 7 | 8 | C
+Số nào ở giữa số 8 và số 10? | 7 | 9 | 11 | 6 | B
+Bạn Sóc có 4 hạt dẻ, bạn Nhím cho thêm 4 hạt. Hỏi bạn Sóc có tất cả bao nhiêu hạt dẻ? | 7 hạt | 8 hạt | 9 hạt | 6 hạt | B
+Trên cây có 7 quả xoài, bạn hái thêm 1 quả. Hỏi có tất cả bao nhiêu quả xoài? | 7 quả | 8 quả | 9 quả | 6 quả | B
+6 + 0 = ? | 5 | 6 | 7 | 8 | B
+8 − 1 = ? | 6 | 7 | 5 | 8 | B
+Bạn Mèo có 2 con chuột đồ chơi, bạn Thỏ cho thêm 3 con. Hỏi bạn Mèo có tổng cộng bao nhiêu con chuột đồ chơi? | 4 con | 5 con | 6 con | 7 con | B
+__ + 4 = 4. Hỏi __ bằng bao nhiêu? | 1 | 2 | 0 | 3 | C
+3 − __ = 0. Hỏi __ bằng bao nhiêu? | 1 | 2 | 3 | 0 | C
+Điền dấu thích hợp (> , < , =): 4 + 5 __ 10 | > | < | = | Không xác định | B
+Tuyệt vời! Cứ thoải mái nhé, đây là thêm nhiều câu hỏi nữa, không phân loại, để bạn có thể luyện tập một cách ngẫu nhiên và đa dạng.
+
+Bạn Sói có 5 khúc xương, bạn Gấu cho thêm 4 khúc. Hỏi bạn Sói có tổng cộng mấy khúc xương? | 8 khúc | 9 khúc | 7 khúc | 6 khúc | B
+Có 10 bông hoa hướng dương, 4 bông bị héo. Hỏi còn lại bao nhiêu bông hoa hướng dương tươi? | 5 bông | 6 bông | 7 bông | 8 bông | B
+__ + 7 = 9. Hỏi __ bằng bao nhiêu? | 1 | 2 | 3 | 4 | B
+8 − __ = 1. Hỏi __ bằng bao nhiêu? | 5 | 6 | 7 | 4 | C
+Số nào nhỏ nhất trong các số: 5, 1, 8, 3? | 5 | 1 | 8 | 3 | B
+Bạn Chim sẻ có 4 miếng bánh mì, bạn Bồ câu cho thêm 3 miếng. Hỏi bạn Chim sẻ có tổng cộng mấy miếng bánh mì? | 6 miếng | 7 miếng | 8 miếng | 5 miếng | B
+Trên đĩa có 9 cái kẹo, bạn ăn hết 6 cái. Hỏi còn lại bao nhiêu cái kẹo? | 2 cái | 3 cái | 4 cái | 5 cái | B
+2 + 8 = ? | 9 | 10 | 7 | 8 | B
+9 − 3 = ? | 5 | 6 | 4 | 7 | B
+Bạn Cua có 6 cái càng, 2 cái bị gãy. Hỏi bạn Cua còn lại mấy cái càng? | 3 cái | 4 cái | 5 cái | 2 cái | B
+__ + 4 = 7. Hỏi __ bằng bao nhiêu? | 2 | 3 | 4 | 1 | B
+10 − __ = 9. Hỏi __ bằng bao nhiêu? | 1 | 2 | 3 | 0 | A
+Số nào lớn nhất trong các số: 2, 0, 7, 4? | 2 | 0 | 7 | 4 | C
+Bạn Chuồn chuồn có 5 cánh, bạn Bướm cho thêm 5 cánh. Hỏi bạn Chuồn chuồn có tất cả bao nhiêu cánh? | 9 cánh | 10 cánh | 8 cánh | 7 cánh | B
+Trong hộp có 1 quả bóng đỏ, bạn cho thêm 9 quả bóng vàng. Hỏi trong hộp có tất cả bao nhiêu quả bóng? | 9 quả | 10 quả | 8 quả | 7 quả | B
+3 + 7 = ? | 9 | 10 | 8 | 7 | B
+8 − 6 = ? | 1 | 2 | 3 | 4 | B
+Bạn Hổ có 7 miếng thịt, ăn hết 3 miếng. Hỏi bạn Hổ còn lại mấy miếng thịt? | 3 miếng | 4 miếng | 5 miếng | 2 miếng | B
+__ + 0 = 9. Hỏi __ bằng bao nhiêu? | 8 | 9 | 7 | 6 | B
+6 − __ = 4. Hỏi __ bằng bao nhiêu? | 1 | 2 | 3 | 0 | B
+Điền dấu thích hợp (> , < , =): 8 + 1 __ 10 | > | < | = | Không xác định | B
+Bạn Dê có 4 sừng, bạn Nai cho thêm 2 sừng. Hỏi bạn Dê có tổng cộng bao nhiêu sừng? | 5 sừng | 6 sừng | 7 sừng | 8 sừng | B
+7 − 0 = ? | 6 | 7 | 8 | 9 | B
+Có 5 bông hoa cúc, nở thêm 4 bông. Hỏi có tổng cộng bao nhiêu bông hoa cúc? | 8 bông | 9 bông | 7 bông | 10 bông | B
+__ + 2 = 5. Hỏi __ bằng bao nhiêu? | 2 | 3 | 4 | 5 | B
+10 − __ = 5. Hỏi __ bằng bao nhiêu? | 3 | 4 | 5 | 6 | C
+Bạn Bướm có 10 đốm màu, 2 đốm bị mờ đi. Hỏi bạn Bướm còn lại bao nhiêu đốm màu? | 7 đốm | 8 đốm | 9 đốm | 6 đốm | B
+Bạn Cú mèo có 1 cuốn sách, bạn Chuột mang đến 4 cuốn. Hỏi bạn Cú mèo có tổng cộng mấy cuốn sách? | 4 cuốn | 5 cuốn | 6 cuốn | 7 cuốn | B
+6 + 2 = ? | 7 | 8 | 9 | 5 | B
+9 − 7 = ? | 1 | 2 | 3 | 4 | B
+Bạn Cá vàng có 8 chiếc vảy óng ánh, 5 chiếc bị rơi. Hỏi bạn Cá vàng còn lại bao nhiêu chiếc vảy? | 2 chiếc | 3 chiếc | 4 chiếc | 5 chiếc | B
+__ + 3 = 6. Hỏi __ bằng bao nhiêu? | 2 | 3 | 4 | 5 | B
+7 − __ = 4. Hỏi __ bằng bao nhiêu? | 2 | 3 | 4 | 5 | B
+Số nào ở giữa số 3 và số 5? | 2 | 4 | 6 | 7 | B
+Bạn Ốc sên có 0 ngôi nhà, bạn Rùa cho 1 ngôi nhà. Hỏi bạn Ốc sên có bao nhiêu ngôi nhà? | 1 ngôi nhà | 0 ngôi nhà | 2 ngôi nhà | 3 ngôi nhà | A
+Trên cây có 7 quả táo, bạn Hái thêm 3 quả. Hỏi có tổng cộng bao nhiêu quả táo? | 9 quả | 10 quả | 8 quả | 7 quả | B
+5 + 5 = ? | 9 | 10 | 8 | 7 | B
+10 − 1 = ? | 8 | 9 | 7 | 10 | B
+Bạn Cừu có 4 chiếc lông, bạn Thỏ cho thêm 4 chiếc. Hỏi bạn Cừu có tổng cộng bao nhiêu chiếc lông? | 7 chiếc | 8 chiếc | 9 chiếc | 6 chiếc | B
+__ + 6 = 6. Hỏi __ bằng bao nhiêu? | 1 | 2 | 0 | 3 | C
+8 − __ = 8. Hỏi __ bằng bao nhiêu? | 1 | 2 | 3 | 0 | D
+Điền dấu thích hợp (> , < , =): 9 − 4 __ 5 | > | < | = | Không xác định | C
+Bạn Rồng có 3 cái sừng, bạn Phượng hoàng cho thêm 4 cái. Hỏi bạn Rồng có tất cả mấy cái sừng? | 6 cái | 7 cái | 8 cái | 9 cái | B
+Trong ao có 8 con vịt, 5 con bơi đi. Hỏi còn lại bao nhiêu con vịt? | 2 con | 3 con | 4 con | 1 con | B
+1 + 0 = ? | 1 | 0 | 2 | 3 | A
+9 − 9 = ? | 1 | 0 | 2 | 3 | B
+Bạn Cá heo có 7 chiếc vòng, 3 chiếc bị mất. Hỏi bạn Cá heo còn lại bao nhiêu chiếc vòng? | 3 chiếc | 4 chiếc | 5 chiếc | 6 chiếc | B
+__ + 5 = 10. Hỏi __ bằng bao nhiêu? | 4 | 5 | 6 | 7 | B
+10 − __ = 0. Hỏi __ bằng bao nhiêu? | 8 | 9 | 10 | 7 | C
+Số nào lớn hơn? 0 hay 6? | 0 | 1 | 6 | 5 | C
+Bạn Voi có 2 quả chuối, bạn Tê giác cho thêm 6 quả. Hỏi bạn Voi có tổng cộng bao nhiêu quả chuối? | 7 quả | 8 quả | 9 quả | 10 quả | B
+Trên bàn có 4 chiếc bút chì, bạn đặt thêm 5 chiếc. Hỏi có tất cả bao nhiêu chiếc bút chì? | 8 chiếc | 9 chiếc | 7 chiếc | 6 chiếc | B
+0 + 0 = ? | 0 | 1 | 2 | 3 | A
+5 − 0 = ? | 4 | 5 | 3 | 2 | B
+Bạn Gà con có 5 hạt thóc, bạn Mẹ cho thêm 3 hạt. Hỏi bạn Gà con có tất cả bao nhiêu hạt thóc? | 7 hạt | 8 hạt | 6 hạt | 9 hạt | B
+__ + 2 = 9. Hỏi __ bằng bao nhiêu? | 6 | 7 | 8 | 5 | B
+8 − __ = 0. Hỏi __ bằng bao nhiêu? | 6 | 7 | 8 | 5 | C
+Điền dấu thích hợp (> , < , =): 10 − 5 __ 4 | > | < | = | Không xác định | A
+Bạn Sư tử có 1 quả cam, bạn Hà mã cho thêm 7 quả. Hỏi bạn Sư tử có tổng cộng bao nhiêu quả cam? | 7 quả | 8 quả | 9 quả | 6 quả | B
+Trong hộp có 6 chiếc bút màu, bạn lấy ra 2 chiếc. Hỏi còn lại bao nhiêu chiếc bút màu? | 3 chiếc | 4 chiếc | 5 chiếc | 2 chiếc | B
+1 + 1 = ? | 1 | 2 | 3 | 0 | B
+6 − 1 = ? | 4 | 5 | 3 | 2 | B
+Bạn Khủng long có 9 quả trứng, 3 quả nở. Hỏi còn lại bao nhiêu quả trứng chưa nở? | 5 quả | 6 quả | 7 quả | 8 quả | B
+__ + 3 = 10. Hỏi __ bằng bao nhiêu? | 6 | 7 | 8 | 5 | B
+9 − __ = 6. Hỏi __ bằng bao nhiêu? | 2 | 3 | 4 | 5 | B
+Số nào liền sau số 7? | 6 | 8 | 9 | 5 | B
+Bạn Cáo có 4 cái đuôi, bạn Sói cho thêm 1 cái đuôi. Hỏi bạn Cáo có tất cả mấy cái đuôi? | 4 cái | 5 cái | 6 cái | 7 cái | B
+Trên cây có 8 con chim, 6 con bay đi. Hỏi còn lại bao nhiêu con chim? | 1 con | 2 con | 3 con | 4 con | B
+4 + 0 = ? | 3 | 4 | 5 | 2 | B
+10 − 4 = ? | 5 | 6 | 7 | 8 | B
+Bạn Hươu cao cổ có 3 đốm đen, bạn Vằn cho thêm 5 đốm. Hỏi bạn Hươu cao cổ có tổng cộng bao nhiêu đốm? | 7 đốm | 8 đốm | 9 đốm | 6 đốm | B
+__ + 8 = 9. Hỏi __ bằng bao nhiêu? | 0 | 1 | 2 | 3 | B
+7 − __ = 2. Hỏi __ bằng bao nhiêu? | 3 | 4 | 5 | 6 | C
+Điền dấu thích hợp (> , < , =): 6 + 4 __ 9 | > | < | = | Không xác định | A
+Bạn Gấu Bắc Cực có 2 con cá, bạn Chim cánh cụt cho thêm 5 con. Hỏi bạn Gấu Bắc Cực có tất cả bao nhiêu con cá? | 6 con | 7 con | 8 con | 9 con | B
+Trong vườn có 10 bông hoa tulip, bạn hái đi 7 bông. Hỏi còn lại bao nhiêu bông hoa tulip? | 2 bông | 3 bông | 4 bông | 5 bông | B
+3 + 0 = ? | 2 | 3 | 4 | 5 | B
+9 − 1 = ? | 7 | 8 | 6 | 9 | B
+Bạn Cún con có 5 cái xương, ăn mất 2 cái. Hỏi bạn Cún con còn lại bao nhiêu cái xương? | 2 cái | 3 cái | 4 cái | 1 cái | B
+__ + 1 = 10. Hỏi __ bằng bao nhiêu? | 8 | 9 | 7 | 6 | B
+5 − __ = 1. Hỏi __ bằng bao nhiêu? | 2 | 3 | 4 | 5 | C
+Số nào liền trước số 4? | 3 | 5 | 2 | 1 | A
+Bạn Chuột túi có 10 đồng xu, bạn làm rơi mất 4 đồng. Hỏi bạn Chuột túi còn lại bao nhiêu đồng xu? | 5 đồng | 6 đồng | 7 đồng | 4 đồng | B
+Bạn Chim ruồi có 1 bông hoa, bạn Bướm cho thêm 2 bông. Hỏi bạn Chim ruồi có tất cả mấy bông hoa? | 2 bông | 3 bông | 4 bông | 5 bông | B
+2 + 4 = ? | 5 | 6 | 7 | 8 | B
+8 − 2 = ? | 5 | 6 | 7 | 4 | B
+Bạn Ong có 7 bông hoa, bạn Thu hoạch mật 4 bông. Hỏi bạn Ong còn lại bao nhiêu bông hoa? | 2 bông | 3 bông | 4 bông | 5 bông | B
+__ + 0 = 1. Hỏi __ bằng bao nhiêu? | 1 | 0 | 2 | 3 | A
+4 − __ = 0. Hỏi __ bằng bao nhiêu? | 2 | 3 | 4 | 1 | C
+Điền dấu thích hợp (> , < , =): 7 − 1 __ 5 | > | < | = | Không xác định | A
+Bạn Gấu Trúc có 6 cây tre, bạn Voi cho thêm 3 cây. Hỏi bạn Gấu Trúc có tổng cộng bao nhiêu cây tre? | 8 cây | 9 cây | 7 cây | 10 cây | B
+Trên bàn có 5 quả chuối, bạn ăn mất 1 quả. Hỏi còn lại bao nhiêu quả chuối? | 3 quả | 4 quả | 2 quả | 5 quả | B
+5 + 0 = ? | 4 | 5 | 6 | 7 | B
+10 − 3 = ? | 6 | 7 | 8 | 9 | B
+Bạn Cáo có 8 quả dâu tây, 2 quả bị hỏng. Hỏi bạn Cáo còn lại bao nhiêu quả dâu tây? | 5 quả | 6 quả | 7 quả | 4 quả | B
+__ + 7 = 7. Hỏi __ bằng bao nhiêu? | 1 | 2 | 0 | 3 | C
+9 − __ = 2. Hỏi __ bằng bao nhiêu? | 5 | 6 | 7 | 8 | C
+Số nào ở giữa số 8 và số 10? | 7 | 9 | 11 | 6 | B
+Bạn Sóc có 4 hạt dẻ, bạn Nhím cho thêm 4 hạt. Hỏi bạn Sóc có tất cả bao nhiêu hạt dẻ? | 7 hạt | 8 hạt | 9 hạt | 6 hạt | B
+Trên cây có 7 quả xoài, bạn hái thêm 1 quả. Hỏi có tất cả bao nhiêu quả xoài? | 7 quả | 8 quả | 9 quả | 6 quả | B
+6 + 0 = ? | 5 | 6 | 7 | 8 | B
+8 − 1 = ? | 6 | 7 | 5 | 8 | B
+Bạn Mèo có 2 con chuột đồ chơi, bạn Thỏ cho thêm 3 con. Hỏi bạn Mèo có tổng cộng bao nhiêu con chuột đồ chơi? | 4 con | 5 con | 6 con | 7 con | B
+__ + 4 = 4. Hỏi __ bằng bao nhiêu? | 1 | 2 | 0 | 3 | C
+3 − __ = 0. Hỏi __ bằng bao nhiêu? | 1 | 2 | 3 | 0 | C
+Điền dấu thích hợp (> , < , =): 4 + 5 __ 10 | > | < | = | Không xác định | B
