@@ -48,13 +48,12 @@
 
         <!-- MÀN HÌNH CHỌN MAP -->
         <div id="map-selection-screen" class="hidden">
-            <h1 class="main-title">Chọn Một Cuộc Phiêu Lưu</h1>
-            <div class="map-choices" id="map-choices"></div>
-            <div class="pagination-controls">
-                <button id="prev-page-btn" class="pagination-btn">◀ Trang Trước</button>
-                <span id="page-indicator">Trang 1 / 10</span>
-                <button id="next-page-btn" class="pagination-btn">Trang Sau ▶</button>
+            <h1 class="main-title">Lộ Trình Phiêu Lưu</h1>
+            <div class="roadmap-container-horizontal">
+                <div class="roadmap-path-horizontal"></div>
+                <div class="roadmap-nodes-horizontal" id="map-nodes-container"></div>
             </div>
+            <button id="back-to-home-btn" class="back-btn">◀ Quay Về</button>
         </div>
         
         <!-- KHU VỰC TRÒ CHƠI -->
@@ -80,7 +79,7 @@
             <div id="character-image-win" class="character-image-win"></div>
             <p id="unlock-message" class="unlock-message hidden"></p>
             <p id="win-subtitle" class="win-subtitle"></p>
-            <button id="play-again-btn" class="action-btn">Chọn Map Khác</button>
+            <button id="play-again-btn" class="action-btn">Quay lại Lộ Trình</button>
         </div>
         <div id="game-over-screen" class="hidden">
              <h2 id="game-over-title" class="game-over-title">GAME OVER</h2>
