@@ -29,30 +29,177 @@ body {
 #logout-btn { border: none; background: #ff4757; color: white; padding: 5px 10px; border-radius: 10px; cursor: pointer; font-weight: 700; }
 
 /* --- Màn hình Chọn Map Siêu Cấp --- */
-#map-selection-screen { text-align: center; position: relative; z-index: 2; }
-.main-title { font-size: clamp(2.2rem, 6.5vw, 3.2rem); font-weight: 700; color: var(--primary-color); text-shadow: 3px 3px 0px var(--secondary-color); margin-bottom: 10px; }
-.sub-title { font-size: 1.5em; color: var(--text-color); margin-bottom: 40px; }
-.map-choices { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 25px; min-height: 380px; }
-.map-choice-btn { background: rgba(255,255,255,0.8); border: 3px solid var(--secondary-color); border-radius: 20px; padding: 20px; cursor: pointer; transition: all 0.3s ease; backdrop-filter: blur(2px); position: relative; }
-.map-choice-btn:hover { transform: translateY(-10px) scale(1.05); box-shadow: 0 15px 25px rgba(0,0,0,0.15); }
-.map-icon-wrapper { height: 70px; display: flex; align-items: center; justify-content: center; margin-bottom: 10px; }
-.map-icon { font-size: 60px; color: var(--primary-color); animation: dance 2s ease-in-out infinite; }
-@keyframes dance { 0%, 100% { transform: translateY(0) rotate(0); } 25% { transform: translateY(-10px) rotate(-10deg); } 75% { transform: translateY(-10px) rotate(10deg); } }
-.map-name { font-family: var(--font-family); font-weight: 700; font-size: 1.2em; color: var(--text-color); }
-.map-choice-btn.locked { filter: grayscale(1); opacity: 0.6; pointer-events: none; }
-.map-choice-btn.locked:hover { transform: none; box-shadow: none; }
-.map-choice-btn.locked .map-icon { animation: none; }
-.lock-icon { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 80px; color: rgba(0,0,0,0.5); z-index: 10; }
-#snow-container { position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 1; }
-.snow { position: absolute; background: white; border-radius: 50%; }
-@keyframes snowfall { from { transform: translateY(-10vh); } to { transform: translateY(100vh); } }
-@keyframes sway { from { transform: translateX(-25px); } to { transform: translateX(25px); } }
-.pagination-controls { display: flex; justify-content: space-between; align-items: center; margin-top: 30px; }
-.pagination-btn { font-family: var(--font-family); font-size: 1.1em; font-weight: 700; padding: 10px 20px; border: none; border-radius: 15px; color: white; cursor: pointer; transition: all 0.3s ease; background: var(--primary-color); box-shadow: 0 4px 0 var(--primary-color-dark); }
-.pagination-btn:hover:not(:disabled) { transform: translateY(-2px); box-shadow: 0 6px 0 var(--primary-color-dark); }
-.pagination-btn:active:not(:disabled) { transform: translateY(1px); box-shadow: 0 3px 0 var(--primary-color-dark); }
-.pagination-btn:disabled { background: #cccccc; color: #888888; cursor: not-allowed; opacity: 0.8; box-shadow: 0 4px 0 #aaaaaa; transform: translateY(0); }
-#page-indicator { font-weight: 700; font-size: 1.2em; color: var(--text-color); }
+/* --- MÀN HÌNH CHỌN MAP (ROADMAP NGANG MỚI) --- */
+#map-selection-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    background: linear-gradient(135deg, var(--bg-color) 0%, var(--secondary-color) 100%);
+    z-index: 200;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+#map-selection-screen.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+#map-selection-screen .main-title {
+    font-size: clamp(2rem, 6vw, 3rem);
+    text-shadow: 2px 2px 0px rgba(0,0,0,0.1);
+    color: white;
+    margin-bottom: 5px;
+}
+
+.roadmap-container-horizontal {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 450px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    position: relative;
+    padding: 0 50px;
+}
+.roadmap-container-horizontal::-webkit-scrollbar { height: 12px; }
+.roadmap-container-horizontal::-webkit-scrollbar-track { background: rgba(0,0,0,0.1); border-radius: 10px; }
+.roadmap-container-horizontal::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.5); border-radius: 10px; }
+.roadmap-container-horizontal::-webkit-scrollbar-thumb:hover { background: white; }
+
+.roadmap-path-horizontal {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    height: 8px;
+    background: white;
+    transform: translateY(-50%);
+    z-index: 1;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.roadmap-nodes-horizontal {
+    display: inline-flex;
+    align-items: center;
+    height: 100%;
+    position: relative;
+    z-index: 2;
+    padding: 0 50px; /* Tạo khoảng trống ở đầu và cuối */
+}
+
+.map-node {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 80px;
+    position: relative;
+    width: 180px;
+    flex-shrink: 0;
+}
+
+/* Node ở trên và dưới xen kẽ */
+.map-node:nth-child(even) { transform: translateY(80px); }
+.map-node:nth-child(odd) { transform: translateY(-80px); }
+
+/* Vòng tròn trên đường đi */
+.map-node::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    background: var(--bg-color);
+    border: 5px solid white;
+    border-radius: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+}
+.map-node:nth-child(even)::after { top: calc(50% - 92px); }
+.map-node:nth-child(odd)::after { top: calc(50% + 68px); }
+
+.map-node-button {
+    background: white;
+    border: 3px solid var(--primary-color);
+    border-radius: 20px;
+    padding: 40px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.map-node.locked .map-node-button {
+    filter: grayscale(1) saturate(0.5);
+    opacity: 0.7;
+    pointer-events: none;
+    border-color: #aaa;
+}
+.map-node:not(.locked) .map-node-button:hover {
+    transform: scale(1.1);
+}
+
+/* HIỆU ỨNG ICON NHẢY MÚA */
+.map-node:not(.locked) .map-node-icon {
+    animation: dance-icon 2.5s ease-in-out infinite;
+}
+
+@keyframes dance-icon {
+    0%, 100% {
+        transform: rotate(0deg) scale(1);
+    }
+    25% {
+        transform: rotate(-8deg) scale(1.1);
+    }
+    50% {
+        transform: rotate(0deg) scale(1);
+    }
+    75% {
+        transform: rotate(8deg) scale(1.1);
+    }
+}
+
+.map-node.locked .map-node-icon {
+    animation: none; /* Đảm bảo icon bị khóa không nhảy */
+}
+
+.map-node-icon { font-size: 50px; color: var(--primary-color); height: 50px; }
+.map-node-name { font-weight: 700; font-size: 1.1em; color: var(--text-color); }
+.map-node-level { font-size: 0.9em; color: var(--primary-color); font-weight: bold; }
+
+.lock-icon {
+    position: absolute; top: 35%; left: 50%;
+    transform: translateX(-50%);
+    font-size: 50px;
+    color: rgba(0,0,0,0.6);
+    z-index: 10;
+}
+.back-btn {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    font-size: 1.1em;
+    font-weight: 700;
+    padding: 10px 20px;
+    border: 2px solid white;
+    border-radius: 15px;
+    color: white;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.back-btn:hover {
+    background: white;
+    color: var(--text-color);
+}
 
 /* --- Game Area --- */
 .game-header { display: flex; justify-content: space-between; align-items: center; margin: 0 auto 10px; width: 90%; max-width: 400px; }
@@ -112,6 +259,154 @@ body.theme-monkey #sound-control, body.theme-dragon #sound-control, body.theme-a
 body.theme-monkey .action-btn, body.theme-dragon .action-btn, body.theme-astronaut .action-btn { color: #222; background: var(--primary-color); box-shadow: 0 5px 0 #bbb; }
 body.theme-monkey .action-btn:hover, body.theme-dragon .action-btn:hover, body.theme-astronaut .action-btn:hover { background: #ffffff; box-shadow: 0 7px 0 #aaa; }
 /* Dán đoạn code này vào cuối file style.css */
+
+/* --- TRANG CHỦ (MỚI) --- */
+#home-screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 60px 20px;
+    position: relative;
+    overflow: hidden; /* Giữ tuyết bên trong */
+}
+#home-snow-container {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    pointer-events: none; z-index: 1;
+}
+
+.home-title {
+    font-size: clamp(3rem, 10vw, 5.5rem);
+    font-weight: 700;
+    color: var(--primary-color);
+    text-shadow: 4px 4px 0px var(--secondary-color);
+    margin-bottom: 20px;
+    z-index: 2;
+    animation: popUp 1s ease-out;
+}
+.home-subtitle {
+    font-size: 1.6em;
+    color: var(--text-color);
+    margin-bottom: 50px;
+    max-width: 500px;
+    z-index: 2;
+    animation: fadeIn 1.5s ease-out;
+}
+#start-adventure-btn {
+    transform: scale(1.2);
+    animation: heartbeat 2s infinite, popUp 1s ease-out 0.5s backwards;
+}
+/* Dán đoạn code này vào cuối cùng của file style.css */
+
+/* --- TỐI ƯU GIAO DIỆN CHO ĐIỆN THOẠI (RESPONSIVE) --- */
+
+/* Áp dụng cho màn hình có chiều rộng tối đa 768px (máy tính bảng và điện thoại) */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px 15px; /* Giảm padding của khung chính */
+    }
+
+    /* --- Màn hình chính và chọn map --- */
+    .main-title, .home-title {
+        /* Giảm kích thước chữ của tiêu đề lớn */
+        font-size: clamp(2rem, 10vw, 2.8rem);
+        text-shadow: 2px 2px 0px var(--secondary-color);
+    }
+
+    .sub-title, .home-subtitle {
+        font-size: 1.2em; /* Giảm kích thước chữ phụ */
+        margin-bottom: 30px;
+    }
+
+    .map-choices {
+        grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); /* Hiển thị 2 cột trên điện thoại */
+        gap: 15px;
+        min-height: auto; /* Bỏ chiều cao tối thiểu */
+    }
+
+    .map-icon-wrapper {
+        height: 60px;
+    }
+
+    .map-icon {
+        font-size: 50px;
+    }
+
+    .map-name {
+        font-size: 1em;
+    }
+    
+    .pagination-controls {
+        margin-top: 25px;
+    }
+
+    .pagination-btn {
+        padding: 8px 15px;
+        font-size: 1em;
+    }
+
+    /* --- Khu vực chơi game --- */
+    .game-header {
+        width: 100%; /* Chiếm toàn bộ chiều rộng */
+        max-width: none;
+        margin-bottom: 15px;
+    }
+    
+    .question-counter, #heart-container {
+        transform: scale(0.9); /* Thu nhỏ một chút */
+    }
+    
+    .progress-map-container {
+        margin-bottom: 20px;
+    }
+    
+    .answers {
+        /* Luôn hiển thị 1 cột trên điện thoại để dễ đọc */
+        grid-template-columns: 1fr;
+    }
+    
+    .answer-btn {
+        font-size: 1.1em;
+        padding: 15px;
+    }
+
+    /* --- Các màn hình kết thúc --- */
+    .win-title, .game-over-title, .level-complete-title {
+        font-size: clamp(2.5rem, 12vw, 4rem);
+    }
+    
+    .win-subtitle, .game-over-text, .level-complete-text {
+        font-size: 1.2em;
+    }
+
+    .character-image-win, .game-over-character, .character-level-up {
+        font-size: 120px;
+    }
+    
+    .action-btn {
+        font-size: 1.3em;
+        padding: 12px 35px;
+    }
+    
+    /* --- Các thành phần phụ --- */
+    #user-info {
+        transform: scale(0.85);
+        top: 10px;
+        left: 10px;
+    }
+    #sound-control {
+        transform: scale(0.85);
+        top: 10px;
+        right: 10px;
+    }
+    .copyright {
+        font-size: 0.7em;
+        bottom: 5px;
+        right: 10px;
+    }
+}
 
 /* --- TRANG CHỦ (MỚI) --- */
 #home-screen {

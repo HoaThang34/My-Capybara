@@ -95,9 +95,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // === Lấy các phần tử HTML ===
     const authScreen = document.getElementById('auth-screen');
-    const homeScreen = document.getElementById('home-screen'); // MỚI
-    const startAdventureBtn = document.getElementById('start-adventure-btn'); // MỚI
-    const homeSnowContainer = document.getElementById('home-snow-container'); // MỚI
     const loginFormContainer = document.getElementById('login-form-container');
     const registerFormContainer = document.getElementById('register-form-container');
     const loginForm = document.getElementById('login-form');
@@ -108,12 +105,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const userInfo = document.getElementById('user-info');
     const welcomeUserEl = document.getElementById('welcome-user');
     const logoutBtn = document.getElementById('logout-btn');
+    const homeScreen = document.getElementById('home-screen');
+    const startAdventureBtn = document.getElementById('start-adventure-btn');
+    const homeSnowContainer = document.getElementById('home-snow-container');
     const mapSelectionScreen = document.getElementById('map-selection-screen');
-    const mapChoicesContainer = document.getElementById('map-choices');
-    const prevPageBtn = document.getElementById('prev-page-btn');
-    const nextPageBtn = document.getElementById('next-page-btn');
-    const pageIndicator = document.getElementById('page-indicator');
-    const snowContainer = document.getElementById('snow-container');
+    const mapNodesContainer = document.getElementById('map-nodes-container');
+    const backToHomeBtn = document.getElementById('back-to-home-btn');
     const gameArea = document.getElementById('game-area'), winScreen = document.getElementById('win-screen');
     const heartContainer = document.getElementById('heart-container');
     const timerContainer = document.getElementById('timer-container'), timerBar = document.getElementById('timer-bar');
@@ -133,24 +130,80 @@ document.addEventListener('DOMContentLoaded', () => {
     let currentUser = null, fullQuestionBank = [], questionsForCurrentRound = [], currentQuestionIndex = 0;
     let playerHearts = 3, timerInterval = null;
     let isMuted = false;
-    let currentPage = 1;
-    const mapsPerPage = 9;
 
     // --- HÀM QUẢN LÝ TÀI KHOẢN & TIẾN TRÌNH (LOCALSTORAGE) ---
     function getAccounts() { return JSON.parse(localStorage.getItem('gameAccounts_v2')) || []; }
     function saveAccounts(accounts) { localStorage.setItem('gameAccounts_v2', JSON.stringify(accounts)); }
-    function handleRegister(e) { e.preventDefault(); const username = document.getElementById('register-username').value.trim(); const password = document.getElementById('register-password').value.trim(); if (!username || !password) { authErrorEl.textContent = 'Vui lòng nhập đủ thông tin.'; return; } let accounts = getAccounts(); if (accounts.find(acc => acc.username.toLowerCase() === username.toLowerCase())) { authErrorEl.textContent = 'Tên tài khoản này đã có người dùng rồi.'; return; } accounts.push({ username, password, highestLevelUnlocked: 1 }); saveAccounts(accounts); alert('Tạo tài khoản thành công! Giờ bé hãy đăng nhập nhé.'); showLoginScreen(); loginForm.reset(); registerForm.reset(); }
-    function handleLogin(e) { e.preventDefault(); const username = document.getElementById('login-username').value.trim(); const password = document.getElementById('login-password').value.trim(); let accounts = getAccounts(); if (username.toLowerCase() === 'admin' && password === 'admin') { currentUser = { username: 'Admin', highestLevelUnlocked: 999 }; sessionStorage.setItem('currentUser', JSON.stringify(currentUser)); initializeApp(); return; } const user = accounts.find(acc => acc.username.toLowerCase() === username.toLowerCase() && acc.password === password); if (user) { currentUser = user; sessionStorage.setItem('currentUser', JSON.stringify(currentUser)); initializeApp(); } else { authErrorEl.textContent = 'Tên tài khoản hoặc mật khẩu không đúng.'; } }
-    function handleLogout() { currentUser = null; sessionStorage.removeItem('currentUser'); userInfo.classList.add('hidden'); showScreen(authScreen); }
-    function saveProgress() { if (!currentUser || currentUser.username === 'Admin') return; let accounts = getAccounts(); const userIndex = accounts.findIndex(acc => acc.username.toLowerCase() === currentUser.username.toLowerCase()); if (userIndex !== -1) { accounts[userIndex].highestLevelUnlocked = currentUser.highestLevelUnlocked; saveAccounts(accounts); } }
+    
+    function handleRegister(e) {
+        e.preventDefault();
+        const username = document.getElementById('register-username').value.trim();
+        const password = document.getElementById('register-password').value.trim();
+        if (!username || !password) { authErrorEl.textContent = 'Vui lòng nhập đủ thông tin.'; return; }
+        
+        let accounts = getAccounts();
+        if (accounts.find(acc => acc.username.toLowerCase() === username.toLowerCase())) {
+            authErrorEl.textContent = 'Tên tài khoản này đã có người dùng rồi.'; return;
+        }
+        
+        accounts.push({ username, password, highestLevelUnlocked: 1 });
+        saveAccounts(accounts);
+        alert('Tạo tài khoản thành công! Giờ bé hãy đăng nhập nhé.');
+        showLoginScreen();
+        loginForm.reset();
+        registerForm.reset();
+    }
+
+    function handleLogin(e) {
+        e.preventDefault();
+        const username = document.getElementById('login-username').value.trim();
+        const password = document.getElementById('login-password').value.trim();
+        let accounts = getAccounts();
+        
+        if (username.toLowerCase() === 'admin' && password === 'admin') {
+            currentUser = { username: 'Admin', highestLevelUnlocked: 999 };
+            sessionStorage.setItem('currentUser', JSON.stringify(currentUser));
+            initializeApp();
+            return;
+        }
+
+        const user = accounts.find(acc => acc.username.toLowerCase() === username.toLowerCase() && acc.password === password);
+        if (user) {
+            currentUser = user;
+            sessionStorage.setItem('currentUser', JSON.stringify(currentUser));
+            localStorage.setItem('lastLoggedInUser', user.username);
+            initializeApp();
+        } else {
+            authErrorEl.textContent = 'Tên tài khoản hoặc mật khẩu không đúng.';
+        }
+    }
+    
+    function handleLogout() {
+        currentUser = null;
+        sessionStorage.removeItem('currentUser');
+        localStorage.removeItem('lastLoggedInUser');
+        userInfo.classList.add('hidden');
+        soundControl.classList.add('hidden');
+        showScreen(authScreen);
+        showLoginScreen();
+    }
+    
+    function saveProgress() {
+        if (!currentUser || currentUser.username === 'Admin') return;
+        let accounts = getAccounts();
+        const userIndex = accounts.findIndex(acc => acc.username.toLowerCase() === currentUser.username.toLowerCase());
+        if (userIndex !== -1) {
+            accounts[userIndex].highestLevelUnlocked = currentUser.highestLevelUnlocked;
+            saveAccounts(accounts);
+        }
+    }
 
     // --- HÀM QUẢN LÝ GIAO DIỆN ---
     function showScreen(screenToShow) {
-        // Thêm homeScreen vào danh sách
         [authScreen, homeScreen, mapSelectionScreen, gameArea, winScreen, gameOverScreen].forEach(screen => {
-            screen.classList.add('hidden');
+            if (screen) screen.classList.add('hidden');
         });
-        screenToShow.classList.remove('hidden');
+        if (screenToShow) screenToShow.classList.remove('hidden');
     }
     
     function showLoginScreen() {
@@ -159,75 +212,144 @@ document.addEventListener('DOMContentLoaded', () => {
         loginFormContainer.classList.remove('hidden');
         registerFormContainer.classList.add('hidden');
         authErrorEl.textContent = '';
-        soundControl.classList.add('hidden'); // Ẩn nút âm thanh khi chưa đăng nhập
     }
-    function showRegisterScreen() { loginFormContainer.classList.add('hidden'); registerFormContainer.classList.remove('hidden'); authErrorEl.textContent = ''; }
-    function updateMapSelectionScreen(page) {
-        currentPage = page;
-        mapChoicesContainer.innerHTML = '';
-        const totalPages = Math.ceil(themes.length / mapsPerPage);
-        pageIndicator.textContent = `Trang ${currentPage} / ${totalPages}`;
-        const startIndex = (currentPage - 1) * mapsPerPage;
-        const endIndex = startIndex + mapsPerPage;
-        const mapsToShow = themes.slice(startIndex, endIndex);
-        mapsToShow.forEach(theme => {
-            const isLocked = theme.level > currentUser.highestLevelUnlocked;
-            const button = document.createElement('button'); button.className = 'map-choice-btn'; button.dataset.themeId = theme.id;
-            let content = `<div class="map-icon-wrapper"><div class="map-icon">${theme.character}</div></div><div class="map-name">${theme.name}</div>`;
-            if (isLocked) { button.classList.add('locked'); content += `<div class="lock-icon">🔒</div>`; }
-            button.innerHTML = content;
-            mapChoicesContainer.appendChild(button);
-        });
-        prevPageBtn.disabled = currentPage === 1;
-        nextPageBtn.disabled = currentPage === totalPages;
+
+    function showRegisterScreen() {
+        loginFormContainer.classList.add('hidden');
+        registerFormContainer.classList.remove('hidden');
+        authErrorEl.textContent = '';
     }
-    function applyTheme(themeId) { let themeToApply = themes.find(t => t.id === themeId); if (!themeToApply) themeToApply = themes[0]; currentTheme = themeToApply; document.body.className = `theme-${currentTheme.id}`; const root = document.documentElement; for (const [key, value] of Object.entries(currentTheme.colors)) { root.style.setProperty(key, value); } if (playerIcon) playerIcon.textContent = currentTheme.playerIcon; if (finalGoal) finalGoal.textContent = currentTheme.character; if (document.getElementById('win-title')) document.getElementById('win-title').textContent = currentTheme.winTitle; if (document.getElementById('character-image-win')) document.getElementById('character-image-win').textContent = currentTheme.winCharacter || currentTheme.character; if (document.getElementById('win-subtitle')) document.getElementById('win-subtitle').textContent = currentTheme.winSubtitle; }
-    function createSnow(container) { // Hàm tạo tuyết giờ nhận container
+
+    function updateMapSelectionScreen() {
+    if (!currentUser) return;
+    mapNodesContainer.innerHTML = '';
+    const roadmapPath = document.querySelector('.roadmap-path-horizontal');
+    
+    themes.forEach(theme => {
+        const isLocked = theme.level > currentUser.highestLevelUnlocked;
+        const node = document.createElement('div');
+        node.className = 'map-node';
+        if (isLocked) node.classList.add('locked');
+
+        const button = document.createElement('button');
+        button.className = 'map-node-button';
+        button.dataset.themeId = theme.id;
+        
+        button.innerHTML = `
+            <div class="map-node-icon">${theme.character}</div>
+            <div class="map-node-name">${theme.name}</div>
+            <div class="map-node-level">Level ${theme.level}</div>
+        `;
+        if (isLocked) button.disabled = true;
+        node.appendChild(button);
+
+        if (isLocked) {
+            const lockIcon = document.createElement('div');
+            lockIcon.className = 'lock-icon';
+            lockIcon.textContent = '🔒';
+            node.appendChild(lockIcon);
+        }
+        mapNodesContainer.appendChild(node);
+    });
+
+    const nodeWidth = 180;
+    const nodeMargin = 60 * 2;
+    roadmapPath.style.width = `${themes.length * (nodeWidth + nodeMargin)}px`;
+}
+
+    function applyTheme(themeId) {
+        let themeToApply = themes.find(t => t.id === themeId); if (!themeToApply) themeToApply = themes[0];
+        currentTheme = themeToApply;
+        document.body.className = `theme-${currentTheme.id}`;
+        const root = document.documentElement;
+        for (const [key, value] of Object.entries(currentTheme.colors)) { root.style.setProperty(key, value); }
+        if (playerIcon) playerIcon.textContent = currentTheme.playerIcon;
+        if (finalGoal) finalGoal.textContent = currentTheme.character;
+        if (document.getElementById('win-title')) document.getElementById('win-title').textContent = currentTheme.winTitle;
+        if (document.getElementById('character-image-win')) document.getElementById('character-image-win').textContent = currentTheme.winCharacter || currentTheme.character;
+        if (document.getElementById('win-subtitle')) document.getElementById('win-subtitle').textContent = currentTheme.winSubtitle;
+    }
+    
+    function createSnow(container) {
         if (!container) return;
-        container.innerHTML = '';
-        const snowCount = 100;
+        container.innerHTML = ''; const snowCount = 100;
         for (let i = 0; i < snowCount; i++) {
-            const snow = document.createElement('div');
-            snow.className = 'snow';
-            const size = Math.random() * 5 + 3 + 'px';
-            snow.style.width = size;
-            snow.style.height = size;
-            snow.style.left = Math.random() * 100 + '%';
-            const fallDuration = Math.random() * 8 + 7;
-            const swayDuration = Math.random() * 4 + 2;
-            const delay = Math.random() * 5;
+            const snow = document.createElement('div'); snow.className = 'snow';
+            const size = Math.random() * 5 + 3 + 'px'; snow.style.width = size; snow.style.height = size;
+            snow.style.left = Math.random() * 100 + '%'; const fallDuration = Math.random() * 8 + 7;
+            const swayDuration = Math.random() * 4 + 2; const delay = Math.random() * 5;
             snow.style.opacity = Math.random() * 0.4 + 0.6;
             snow.style.animation = `snowfall ${fallDuration}s linear ${delay}s infinite, sway ${swayDuration}s ease-in-out ${delay}s infinite alternate`;
             container.appendChild(snow);
         }
     }
-    function updateHeartsDisplay() { heartContainer.innerHTML = ''; for (let i = 0; i < (currentTheme.gameMode === 'hardcore' ? 1 : 3); i++) { const heart = document.createElement('div'); heart.textContent = '❤️'; heart.className = 'heart-icon'; if (i >= playerHearts) { heart.classList.add('lost'); } heartContainer.appendChild(heart); } }
+    
+    function updateHeartsDisplay() {
+        heartContainer.innerHTML = '';
+        for (let i = 0; i < (currentTheme.gameMode === 'hardcore' ? 1 : 3); i++) {
+            const heart = document.createElement('div'); heart.textContent = '❤️';
+            heart.className = 'heart-icon'; if (i >= playerHearts) { heart.classList.add('lost'); }
+            heartContainer.appendChild(heart);
+        }
+    }
     
     function startTimer() {
         clearInterval(timerInterval);
         timerBar.style.transition = 'none';
         timerBar.style.width = '100%';
         void timerBar.offsetWidth;
-        
         const timePerQuestionMs = (currentTheme.timePerQuestion || 200) * 100;
         timerBar.style.transition = `width ${timePerQuestionMs / 1000}s linear`;
         timerBar.style.width = '0%';
-        
-        timerInterval = setTimeout(() => {
-             gameOver('Hết giờ rồi!');
-        }, timePerQuestionMs);
+        timerInterval = setTimeout(() => { gameOver('Hết giờ rồi!'); }, timePerQuestionMs);
     }
 
     // --- CÁC HÀM XỬ LÝ TRÒ CHƠI ---
-    async function loadQuestions() { if (fullQuestionBank.length > 0) return; try { const response = await fetch('data.txt'); const textData = await response.text(); fullQuestionBank = textData.trim().split('\n').filter(line => line && !line.startsWith('#')).map(line => { const parts = line.split('|'); return { question: parts[0], options: [parts[1], parts[2], parts[3], parts[4]], correct: parts[5].trim() }; }); } catch (error) { console.error("Lỗi tải file câu hỏi:", error); } }
-    function startGame() { currentQuestionIndex = 0; heartContainer.classList.add('hidden'); timerContainer.classList.add('hidden'); clearInterval(timerInterval); if (currentTheme.gameMode === 'survival') { playerHearts = 3; heartContainer.classList.remove('hidden'); updateHeartsDisplay(); } else if (currentTheme.gameMode === 'timed' || currentTheme.gameMode === 'hardcore') { timerContainer.classList.remove('hidden'); } questionsForCurrentRound = fullQuestionBank.sort(() => 0.5 - Math.random()).slice(0, 10); createProgressMap(); updateProgressMap(); displayQuestion(); }
-    function displayQuestion() { if (currentQuestionIndex >= questionsForCurrentRound.length) { endGame(); return; } questionCounter.textContent = `Câu ${currentQuestionIndex + 1} / 10`; const currentQuestion = questionsForCurrentRound[currentQuestionIndex]; questionText.textContent = currentQuestion.question; feedbackMessage.textContent = ''; answerButtonsContainer.innerHTML = ''; const options = ['A', 'B', 'C', 'D']; currentQuestion.options.forEach((optionText, index) => { const button = document.createElement('button'); button.classList.add('answer-btn'); button.dataset.option = options[index]; button.textContent = `${options[index]}. ${optionText}`; button.addEventListener('click', handleAnswerSelection); answerButtonsContainer.appendChild(button); }); if (currentTheme.gameMode === 'timed' || currentTheme.gameMode === 'hardcore') { startTimer(); } }
+    async function loadQuestions() {
+        if (fullQuestionBank.length > 0) return;
+        try { const response = await fetch('data.txt'); const textData = await response.text();
+            fullQuestionBank = textData.trim().split('\n').filter(line => line && !line.startsWith('#')).map(line => {
+                const parts = line.split('|');
+                return { question: parts[0], options: [parts[1], parts[2], parts[3], parts[4]], correct: parts[5].trim() };
+            });
+        } catch (error) { console.error("Lỗi tải file câu hỏi:", error); }
+    }
+    
+    function startGame() {
+        currentQuestionIndex = 0;
+        heartContainer.classList.add('hidden');
+        timerContainer.classList.add('hidden');
+        clearInterval(timerInterval);
+        if (currentTheme.gameMode === 'survival') { playerHearts = 3; heartContainer.classList.remove('hidden'); updateHeartsDisplay(); }
+        else if (currentTheme.gameMode === 'timed') { timerContainer.classList.remove('hidden'); }
+        else if (currentTheme.gameMode === 'hardcore') { playerHearts = 1; heartContainer.classList.remove('hidden'); updateHeartsDisplay(); timerContainer.classList.remove('hidden'); }
+        questionsForCurrentRound = fullQuestionBank.sort(() => 0.5 - Math.random()).slice(0, 10);
+        createProgressMap(); updateProgressMap(); displayQuestion();
+    }
+    
+    function displayQuestion() {
+        if (currentQuestionIndex >= questionsForCurrentRound.length) { endGame(); return; }
+        questionCounter.textContent = `Câu ${currentQuestionIndex + 1} / 10`;
+        const currentQuestion = questionsForCurrentRound[currentQuestionIndex];
+        questionText.textContent = currentQuestion.question; feedbackMessage.textContent = '';
+        answerButtonsContainer.innerHTML = '';
+        const options = ['A', 'B', 'C', 'D'];
+        currentQuestion.options.forEach((optionText, index) => {
+            const button = document.createElement('button'); button.classList.add('answer-btn');
+            button.dataset.option = options[index]; button.textContent = `${options[index]}. ${optionText}`;
+            button.addEventListener('click', handleAnswerSelection);
+            answerButtonsContainer.appendChild(button);
+        });
+        if (currentTheme.gameMode === 'timed' || currentTheme.gameMode === 'hardcore') { startTimer(); }
+    }
+    
     function handleAnswerSelection(event) {
         const allButtons = answerButtonsContainer.querySelectorAll('.answer-btn'); allButtons.forEach(btn => btn.disabled = true);
         const selectedOption = event.target.dataset.option; const currentQuestion = questionsForCurrentRound[currentQuestionIndex];
         if (currentTheme.gameMode === 'timed' || currentTheme.gameMode === 'hardcore') { clearInterval(timerInterval); }
         if (selectedOption === currentQuestion.correct) {
-            if (!isMuted) correctSound.play(); correctMessage.textContent = ["Chuẩn luôn!", "Bé giỏi quá!", "Siêu đấy!", "Đúng rồi nè!", "Tuyệt vời!"][Math.floor(Math.random() * 5)];
+            if (!isMuted) correctSound.play();
+            correctMessage.textContent = ["Chuẩn luôn!", "Bé giỏi quá!", "Siêu đấy!", "Đúng rồi nè!", "Tuyệt vời!"][Math.floor(Math.random() * 5)];
             correctOverlay.classList.remove('hidden');
             setTimeout(() => { correctOverlay.classList.add('hidden'); currentQuestionIndex++; updateProgressMap(); displayQuestion(); }, 1800);
         } else {
@@ -238,66 +360,130 @@ document.addEventListener('DOMContentLoaded', () => {
             setTimeout(() => { allButtons.forEach(btn => btn.disabled = false); feedbackMessage.textContent = ''; if (currentTheme.gameMode === 'timed') { startTimer(); } }, 1500);
         }
     }
-    function endGame() { clearInterval(timerInterval); const nextLevel = currentTheme.level + 1; const unlockMessageEl = document.getElementById('unlock-message'); if (currentUser.username !== 'Admin' && nextLevel > currentUser.highestLevelUnlocked && themes.some(t => t.level === nextLevel)) { currentUser.highestLevelUnlocked = nextLevel; sessionStorage.setItem('currentUser', JSON.stringify(currentUser)); saveProgress(); const newMap = themes.find(t => t.level === nextLevel); unlockMessageEl.textContent = `🎉 Đã mở khóa: ${newMap.name}! 🎉`; unlockMessageEl.classList.remove('hidden'); } else { unlockMessageEl.classList.add('hidden'); } showScreen(winScreen); }
-    function gameOver(reason) { clearInterval(timerInterval); document.getElementById('game-over-text').textContent = reason || 'Đừng nản chí, thử lại nhé!'; showScreen(gameOverScreen); }
-    function createProgressMap() { const progressMap = document.getElementById('progress-map'); progressMap.innerHTML = ''; for (let i = 0; i < 10; i++) { const step = document.createElement('div'); step.classList.add('map-step'); progressMap.appendChild(step); } }
-    function updateProgressMap() { const progressMap = document.getElementById('progress-map'); const steps = progressMap.querySelectorAll('.map-step'); steps.forEach((step, index) => { step.classList.toggle('completed', index < currentQuestionIndex); }); const targetStep = steps[currentQuestionIndex] || steps[steps.length - 1]; if (!targetStep) return; const mapRect = progressMap.getBoundingClientRect(); const stepRect = targetStep.getBoundingClientRect(); const newLeft = (stepRect.left - mapRect.left) + (stepRect.width / 2); document.getElementById('player-icon').style.left = `${newLeft}px`; }
+    
+    function endGame() {
+        clearInterval(timerInterval);
+        const nextLevel = currentTheme.level + 1;
+        const unlockMessageEl = document.getElementById('unlock-message');
+        if (currentUser.username !== 'Admin' && nextLevel > currentUser.highestLevelUnlocked && themes.some(t => t.level === nextLevel)) {
+            currentUser.highestLevelUnlocked = nextLevel;
+            sessionStorage.setItem('currentUser', JSON.stringify(currentUser));
+            saveProgress();
+            const newMap = themes.find(t => t.level === nextLevel);
+            unlockMessageEl.textContent = `🎉 Đã mở khóa: ${newMap.name}! 🎉`;
+            unlockMessageEl.classList.remove('hidden');
+        } else {
+            unlockMessageEl.classList.add('hidden');
+        }
+        showScreen(winScreen);
+    }
+    
+    function gameOver(reason) {
+        clearInterval(timerInterval);
+        document.getElementById('game-over-text').textContent = reason || 'Đừng nản chí, thử lại nhé!';
+        showScreen(gameOverScreen);
+    }
+    
+    function createProgressMap() {
+        const progressMap = document.getElementById('progress-map'); progressMap.innerHTML = '';
+        for (let i = 0; i < 10; i++) { const step = document.createElement('div'); step.classList.add('map-step'); progressMap.appendChild(step); }
+    }
+    
+    function updateProgressMap() {
+        const progressMap = document.getElementById('progress-map');
+        const steps = progressMap.querySelectorAll('.map-step');
+        steps.forEach((step, index) => { step.classList.toggle('completed', index < currentQuestionIndex); });
+        const targetStep = steps[currentQuestionIndex] || steps[steps.length - 1]; if (!targetStep) return;
+        const mapRect = progressMap.getBoundingClientRect();
+        const stepRect = targetStep.getBoundingClientRect();
+        const newLeft = (stepRect.left - mapRect.left) + (stepRect.width / 2);
+        document.getElementById('player-icon').style.left = `${newLeft}px`;
+    }
 
     // --- SỰ KIỆN KHỞI ĐỘNG VÀ ĐIỀU KHIỂN ---
-    startAdventureBtn.addEventListener('click', () => {
-        showScreen(mapSelectionScreen);
-        currentPage = 1; // Luôn bắt đầu từ trang 1 khi vào chọn map
-        updateMapSelectionScreen(currentPage);
-        const initialThemeId = themes.find(t => t.level === currentUser.highestLevelUnlocked)?.id || themes[0].id;
-        applyTheme(initialThemeId);
-    });
-    playAgainBtn.addEventListener('click', () => {
-        showScreen(mapSelectionScreen); // Quay về màn hình chọn map
-        createSnow(document.getElementById('snow-container'));
-        const pageToOpen = Math.ceil(currentTheme.level / mapsPerPage);
-        updateMapSelectionScreen(pageToOpen);
-        const initialThemeId = themes.find(t => t.level === currentUser.highestLevelUnlocked)?.id || themes[themes.length - 1].id;
-        applyTheme(initialThemeId);
-    });
+    // --- SỰ KIỆN KHỞI ĐỘNG VÀ ĐIỀU KHIỂN ---
+loginForm.addEventListener('submit', handleLogin);
+registerForm.addEventListener('submit', handleRegister);
+showRegisterLink.addEventListener('click', (e) => { e.preventDefault(); showRegisterScreen(); });
+showLoginLink.addEventListener('click', (e) => { e.preventDefault(); showLoginScreen(); });
+logoutBtn.addEventListener('click', handleLogout);
 
-    loginForm.addEventListener('submit', handleLogin);
-    registerForm.addEventListener('submit', handleRegister);
-    showRegisterLink.addEventListener('click', (e) => { e.preventDefault(); showRegisterScreen(); });
-    showLoginLink.addEventListener('click', (e) => { e.preventDefault(); showLoginScreen(); });
-    logoutBtn.addEventListener('click', handleLogout);
-    mapChoicesContainer.addEventListener('click', async (event) => { const choiceBtn = event.target.closest('.map-choice-btn'); if (!choiceBtn || choiceBtn.classList.contains('locked')) return; const themeId = choiceBtn.dataset.themeId; applyTheme(themeId); showScreen(gameArea); if (!isMuted) bgMusic.play().catch(e => console.log("Trình duyệt chặn phát nhạc.")); await loadQuestions(); startGame(); });
-    retryBtn.addEventListener('click', () => { showScreen(gameArea); startGame(); });
-    playAgainBtn.addEventListener('click', () => {
-        const pageToOpen = Math.ceil(currentTheme.level / mapsPerPage);
-        updateMapSelectionScreen(pageToOpen);
-        const initialThemeId = themes.find(t => t.level === currentUser.highestLevelUnlocked)?.id || themes[themes.length - 1].id;
-        applyTheme(initialThemeId);
-        showScreen(mapSelectionScreen); createSnow();
-    });
-    prevPageBtn.addEventListener('click', () => { if (currentPage > 1) { updateMapSelectionScreen(currentPage - 1); } });
-    nextPageBtn.addEventListener('click', () => { const totalPages = Math.ceil(themes.length / mapsPerPage); if (currentPage < totalPages) { updateMapSelectionScreen(currentPage + 1); } });
-    soundControl.addEventListener('click', () => { isMuted = !isMuted; soundControl.textContent = isMuted ? '🔇' : '🔊'; bgMusic.muted = isMuted; });
+startAdventureBtn.addEventListener('click', () => {
+    showScreen(mapSelectionScreen);
+    updateMapSelectionScreen();
+    const themeForColor = themes.find(t => t.level === currentUser.highestLevelUnlocked) || themes[0];
+    applyTheme(themeForColor.id);
+    
+    setTimeout(() => {
+        const targetNode = mapNodesContainer.querySelector(`.map-node:nth-child(${currentUser.highestLevelUnlocked})`);
+        if (targetNode) {
+            targetNode.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
+        }
+    }, 100);
+});
+
+backToHomeBtn.addEventListener('click', () => {
+    showScreen(homeScreen);
+    applyTheme('rabbit');
+});
+
+mapNodesContainer.addEventListener('click', async (event) => {
+    const choiceBtn = event.target.closest('.map-node-button');
+    if (!choiceBtn || choiceBtn.disabled) return;
+    const themeId = choiceBtn.dataset.themeId;
+    applyTheme(themeId);
+    showScreen(gameArea);
+    if (!isMuted) bgMusic.play().catch(e => console.log("Trình duyệt chặn phát nhạc."));
+    await loadQuestions();
+    startGame();
+});
+
+retryBtn.addEventListener('click', () => { showScreen(gameArea); startGame(); });
+
+playAgainBtn.addEventListener('click', () => {
+    showScreen(mapSelectionScreen);
+    updateMapSelectionScreen();
+    const themeForColor = themes.find(t => t.level === currentTheme.level) || themes[0];
+    applyTheme(themeForColor.id);
+    setTimeout(() => {
+        const targetNode = mapNodesContainer.querySelector(`.map-node:nth-child(${currentTheme.level})`);
+        if (targetNode) {
+            targetNode.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
+        }
+    }, 100);
+});
+
+soundControl.addEventListener('click', () => { isMuted = !isMuted; soundControl.textContent = isMuted ? '🔇' : '🔊'; bgMusic.muted = isMuted; });
 
     // --- KHỞI ĐỘNG BAN ĐẦU ---
     function initializeApp() {
-        showScreen(homeScreen); // SỬA: Sau khi đăng nhập, vào TRANG CHỦ
-        userInfo.classList.remove('hidden');
-        soundControl.classList.remove('hidden');
-        welcomeUserEl.textContent = `Xin chào, ${currentUser.username}!`;
-        createSnow(homeSnowContainer); // SỬA: Tạo tuyết cho TRANG CHỦ
-        applyTheme('rabbit'); // Theme mặc định cho trang chủ
-    }
-
+    showScreen(homeScreen); // Luôn bắt đầu từ màn hình chào mừng
+    userInfo.classList.remove('hidden');
+    soundControl.classList.remove('hidden');
+    welcomeUserEl.textContent = `Xin chào, ${currentUser.username}!`;
+    createSnow(homeSnowContainer);
+    applyTheme('rabbit');
+}
+    
     const savedUser = sessionStorage.getItem('currentUser');
     if (savedUser) {
         currentUser = JSON.parse(savedUser);
-        const accounts = getAccounts();
         if (currentUser.username.toLowerCase() !== 'admin') {
+            const accounts = getAccounts();
             const latestUserData = accounts.find(acc => acc.username.toLowerCase() === currentUser.username.toLowerCase());
             if (latestUserData) { currentUser.highestLevelUnlocked = latestUserData.highestLevelUnlocked; }
         }
         initializeApp();
     } else {
-        showLoginScreen();
+        const lastUser = localStorage.getItem('lastLoggedInUser');
+        if (lastUser) {
+            const accounts = getAccounts();
+            const userToAutoLogin = accounts.find(acc => acc.username === lastUser);
+            if (userToAutoLogin) {
+                currentUser = userToAutoLogin;
+                sessionStorage.setItem('currentUser', JSON.stringify(currentUser));
+                initializeApp();
+            } else { showLoginScreen(); }
+        } else { showLoginScreen(); }
     }
 });
