@@ -30,9 +30,9 @@ body {
 
 /* --- Màn hình Chọn Map Siêu Cấp --- */
 #map-selection-screen { text-align: center; position: relative; z-index: 2; }
-.main-title { font-size: clamp(2.5rem, 8vw, 4rem); font-weight: 700; color: var(--primary-color); text-shadow: 3px 3px 0px var(--secondary-color); margin-bottom: 10px; }
+.main-title { font-size: clamp(2.2rem, 6.5vw, 3.2rem); font-weight: 700; color: var(--primary-color); text-shadow: 3px 3px 0px var(--secondary-color); margin-bottom: 10px; }
 .sub-title { font-size: 1.5em; color: var(--text-color); margin-bottom: 40px; }
-.map-choices { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 25px; }
+.map-choices { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 25px; min-height: 380px; }
 .map-choice-btn { background: rgba(255,255,255,0.8); border: 3px solid var(--secondary-color); border-radius: 20px; padding: 20px; cursor: pointer; transition: all 0.3s ease; backdrop-filter: blur(2px); position: relative; }
 .map-choice-btn:hover { transform: translateY(-10px) scale(1.05); box-shadow: 0 15px 25px rgba(0,0,0,0.15); }
 .map-icon-wrapper { height: 70px; display: flex; align-items: center; justify-content: center; margin-bottom: 10px; }
@@ -47,6 +47,12 @@ body {
 .snow { position: absolute; background: white; border-radius: 50%; }
 @keyframes snowfall { from { transform: translateY(-10vh); } to { transform: translateY(100vh); } }
 @keyframes sway { from { transform: translateX(-25px); } to { transform: translateX(25px); } }
+.pagination-controls { display: flex; justify-content: space-between; align-items: center; margin-top: 30px; }
+.pagination-btn { font-family: var(--font-family); font-size: 1.1em; font-weight: 700; padding: 10px 20px; border: none; border-radius: 15px; color: white; cursor: pointer; transition: all 0.3s ease; background: var(--primary-color); box-shadow: 0 4px 0 var(--primary-color-dark); }
+.pagination-btn:hover:not(:disabled) { transform: translateY(-2px); box-shadow: 0 6px 0 var(--primary-color-dark); }
+.pagination-btn:active:not(:disabled) { transform: translateY(1px); box-shadow: 0 3px 0 var(--primary-color-dark); }
+.pagination-btn:disabled { background: #cccccc; color: #888888; cursor: not-allowed; opacity: 0.8; box-shadow: 0 4px 0 #aaaaaa; transform: translateY(0); }
+#page-indicator { font-weight: 700; font-size: 1.2em; color: var(--text-color); }
 
 /* --- Game Area --- */
 .game-header { display: flex; justify-content: space-between; align-items: center; margin: 0 auto 10px; width: 90%; max-width: 400px; }
@@ -92,12 +98,183 @@ body {
 .action-btn:active { transform: translateY(2px); box-shadow: 0 3px 0 var(--primary-color-dark); }
 #sound-control { position: fixed; top: 20px; right: 20px; width: 50px; height: 50px; background: white; border-radius: 50%; display: flex; justify-content: center; align-items: center; font-size: 24px; cursor: pointer; box-shadow: 0 4px 10px rgba(0,0,0,0.1); z-index: 100; }
 
+/* FOOTER BẢN QUYỀN */
+.copyright { position: fixed; bottom: 10px; right: 15px; font-size: 0.8em; color: var(--text-color); opacity: 0.7; z-index: 100; }
+
 /* --- THEME OVERRIDES --- */
 body.theme-monkey { --bg-color: #333; --container-bg: #1a1a1a; --primary-color: #f5f5f5; --secondary-color: #777; --text-color: #ccc; --correct-color: #a5d6a7; --incorrect-color: #ef9a9a; --secondary-color-translucent: rgba(200, 200, 200, 0.5); --primary-color-dark: #ccc; }
-body.theme-monkey .main-title { text-shadow: 3px 3px 0px #444; }
-body.theme-monkey .map-choice-btn { background: #2b2b2b; }
-body.theme-monkey .answer-btn { background: #333; border-color: #555; }
-body.theme-monkey .answer-btn:hover:not(:disabled) { background-color: #555; color: #fff; border-color: #777; }
-body.theme-monkey #sound-control { background: #333; color: #fff; }
-body.theme-monkey .action-btn { color: #222; background: var(--primary-color); box-shadow: 0 5px 0 #bbb; }
-body.theme-monkey .action-btn:hover { background: #ffffff; box-shadow: 0 7px 0 #aaa; }
+body.theme-monkey .main-title, body.theme-dragon .main-title, body.theme-astronaut .main-title { text-shadow: 3px 3px 0px #444; }
+body.theme-monkey .map-choice-btn, body.theme-dragon .map-choice-btn, body.theme-astronaut .map-choice-btn { background: #2b2b2b; }
+body.theme-monkey .answer-btn, body.theme-dragon .answer-btn, body.theme-astronaut .answer-btn { background: #333; border-color: #555; }
+body.theme-monkey .answer-btn:hover:not(:disabled), body.theme-dragon .answer-btn:hover:not(:disabled), body.theme-astronaut .answer-btn:hover:not(:disabled) { background-color: #555; color: #fff; border-color: #777; }
+body.theme-monkey #sound-control, body.theme-dragon #sound-control, body.theme-astronaut #sound-control { background: #333; color: #fff; }
+body.theme-monkey .action-btn, body.theme-dragon .action-btn, body.theme-astronaut .action-btn { color: #222; background: var(--primary-color); box-shadow: 0 5px 0 #bbb; }
+body.theme-monkey .action-btn:hover, body.theme-dragon .action-btn:hover, body.theme-astronaut .action-btn:hover { background: #ffffff; box-shadow: 0 7px 0 #aaa; }
+/* Dán đoạn code này vào cuối file style.css */
+
+/* --- TRANG CHỦ (MỚI) --- */
+#home-screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 60px 20px;
+    position: relative;
+    overflow: hidden; /* Giữ tuyết bên trong */
+}
+#home-snow-container {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    pointer-events: none; z-index: 1;
+}
+
+.home-title {
+    font-size: clamp(3rem, 10vw, 5.5rem);
+    font-weight: 700;
+    color: var(--primary-color);
+    text-shadow: 4px 4px 0px var(--secondary-color);
+    margin-bottom: 20px;
+    z-index: 2;
+    animation: popUp 1s ease-out;
+}
+.home-subtitle {
+    font-size: 1.6em;
+    color: var(--text-color);
+    margin-bottom: 50px;
+    max-width: 500px;
+    z-index: 2;
+    animation: fadeIn 1.5s ease-out;
+}
+#start-adventure-btn {
+    transform: scale(1.2);
+    animation: heartbeat 2s infinite, popUp 1s ease-out 0.5s backwards;
+}
+/* Dán đoạn code này vào cuối cùng của file style.css */
+
+/* --- TỐI ƯU GIAO DIỆN CHO ĐIỆN THOẠI (RESPONSIVE) --- */
+
+/* Áp dụng cho màn hình có chiều rộng tối đa 768px (máy tính bảng và điện thoại) */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px 15px; /* Giảm padding của khung chính */
+    }
+
+    /* --- Màn hình chính và chọn map --- */
+    .main-title, .home-title {
+        /* Giảm kích thước chữ của tiêu đề lớn */
+        font-size: clamp(2rem, 10vw, 2.8rem);
+        text-shadow: 2px 2px 0px var(--secondary-color);
+    }
+
+    .sub-title, .home-subtitle {
+        font-size: 1.2em; /* Giảm kích thước chữ phụ */
+        margin-bottom: 30px;
+    }
+
+    .map-choices {
+        grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); /* Hiển thị 2 cột trên điện thoại */
+        gap: 15px;
+        min-height: auto; /* Bỏ chiều cao tối thiểu */
+    }
+
+    .map-icon-wrapper {
+        height: 60px;
+    }
+
+    .map-icon {
+        font-size: 50px;
+    }
+
+    .map-name {
+        font-size: 1em;
+    }
+    
+    .pagination-controls {
+        margin-top: 25px;
+    }
+
+    .pagination-btn {
+        padding: 8px 15px;
+        font-size: 1em;
+    }
+
+    /* --- Khu vực chơi game --- */
+    .game-header {
+        width: 100%; /* Chiếm toàn bộ chiều rộng */
+        max-width: none;
+        margin-bottom: 15px;
+    }
+    
+    .question-counter, #heart-container {
+        transform: scale(0.9); /* Thu nhỏ một chút */
+    }
+    
+    .progress-map-container {
+        margin-bottom: 20px;
+    }
+    
+    .answers {
+        /* Luôn hiển thị 1 cột trên điện thoại để dễ đọc */
+        grid-template-columns: 1fr;
+    }
+    
+    .answer-btn {
+        font-size: 1.1em;
+        padding: 15px;
+    }
+
+    /* --- Các màn hình kết thúc --- */
+    .win-title, .game-over-title, .level-complete-title {
+        font-size: clamp(2.5rem, 12vw, 4rem);
+    }
+    
+    .win-subtitle, .game-over-text, .level-complete-text {
+        font-size: 1.2em;
+    }
+
+    .character-image-win, .game-over-character, .character-level-up {
+        font-size: 120px;
+    }
+    
+    .action-btn {
+        font-size: 1.3em;
+        padding: 12px 35px;
+    }
+    
+    /* --- Các thành phần phụ --- */
+    #user-info {
+        transform: scale(0.85);
+        top: 10px;
+        left: 10px;
+    }
+    #sound-control {
+        transform: scale(0.85);
+        top: 10px;
+        right: 10px;
+    }
+    .copyright {
+        font-size: 0.7em;
+        bottom: 5px;
+        right: 10px;
+    }
+}
+
+/* Thêm một chút điều chỉnh cho màn hình rất nhỏ */
+@media (max-width: 480px) {
+    .container {
+        padding: 15px 10px;
+    }
+    .map-choices {
+        gap: 10px;
+    }
+    .map-choice-btn {
+        padding: 15px 10px;
+    }
+    .main-title {
+        margin-bottom: 5px;
+    }
+    .sub-title {
+        margin-bottom: 25px;
+    }
+}

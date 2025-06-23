@@ -8,8 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div id="sound-control">🔊</div>
-    <!-- Thông tin người dùng -->
+    <div id="sound-control" class="hidden">🔊</div>
     <div id="user-info" class="hidden">
         <span id="welcome-user"></span>
         <button id="logout-btn">Đăng xuất</button>
@@ -38,13 +37,24 @@
                 <p class="auth-switch">Đã có tài khoản? <a href="#" id="show-login">Đăng nhập</a></p>
             </div>
         </div>
+        
+        <!-- TRANG CHỦ (MỚI) -->
+        <div id="home-screen" class="hidden">
+            <div id="home-snow-container"></div>
+            <h1 class="home-title">Thế Giới Diệu Kỳ Của Bé</h1>
+            <p class="home-subtitle">Chào mừng bé đã đến với thế giới của những cuộc phiêu lưu và câu đố!</p>
+            <button id="start-adventure-btn" class="action-btn">Bắt đầu phiêu lưu!</button>
+        </div>
 
         <!-- MÀN HÌNH CHỌN MAP -->
         <div id="map-selection-screen" class="hidden">
-            <div id="snow-container"></div>
-            <h1 class="main-title">Thế Giới Diệu Kỳ Của Bé</h1>
-            <h2 class="sub-title">Chinh phục các thử thách nào!</h2>
+            <h1 class="main-title">Chọn Một Cuộc Phiêu Lưu</h1>
             <div class="map-choices" id="map-choices"></div>
+            <div class="pagination-controls">
+                <button id="prev-page-btn" class="pagination-btn">◀ Trang Trước</button>
+                <span id="page-indicator">Trang 1 / 10</span>
+                <button id="next-page-btn" class="pagination-btn">Trang Sau ▶</button>
+            </div>
         </div>
         
         <!-- KHU VỰC TRÒ CHƠI -->
@@ -79,6 +89,8 @@
              <button id="retry-btn" class="action-btn">Chơi Lại Map Này</button>
         </div>
     </div>
+    
+    <footer class="copyright">By [Hoa Quang Thang]</footer>
     
     <div id="correct-overlay" class="hidden"><h2 id="correct-message">Tuyệt vời!</h2></div>
     
