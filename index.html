@@ -3,52 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Giải cứu Capybara</title>
+    <title>Thế Giới Diệu Kỳ Của Bé</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Nút điều khiển âm thanh -->
     <div id="sound-control">🔊</div>
+    <!-- Thông tin người dùng -->
+    <div id="user-info" class="hidden">
+        <span id="welcome-user"></span>
+        <button id="logout-btn">Đăng xuất</button>
+    </div>
 
     <div class="container">
-        <!-- MÀN HÌNH MENU -->
-        <div id="menu-screen">
-            <h1 class="menu-title">Giải cứu Capybara</h1>
-            <div class="character-intro">🦫</div>
-            <h2 class="welcome-text">Bạn Capybara đang chờ bé giúp đó!</h2>
-            <button id="start-btn" class="action-btn">Bắt đầu!</button>
+        <!-- MÀN HÌNH ĐĂNG NHẬP/ĐĂNG KÝ -->
+        <div id="auth-screen">
+            <div id="login-form-container">
+                <h1 class="main-title">Đăng Nhập</h1>
+                <form id="login-form">
+                    <input type="text" id="login-username" placeholder="Tên tài khoản của bé" required>
+                    <input type="password" id="login-password" placeholder="Mật khẩu" required>
+                    <button type="submit" class="action-btn">Vào Chơi</button>
+                </form>
+                <p class="auth-switch">Chưa có tài khoản? <a href="#" id="show-register">Tạo tài khoản</a></p>
+                <p id="auth-error" class="error-message"></p>
+            </div>
+            <div id="register-form-container" class="hidden">
+                <h1 class="main-title">Tạo Tài Khoản</h1>
+                <form id="register-form">
+                    <input type="text" id="register-username" placeholder="Tên tài khoản của bé" required>
+                    <input type="password" id="register-password" placeholder="Mật khẩu" required>
+                    <button type="submit" class="action-btn">Tạo Ngay</button>
+                </form>
+                <p class="auth-switch">Đã có tài khoản? <a href="#" id="show-login">Đăng nhập</a></p>
+            </div>
         </div>
 
+        <!-- MÀN HÌNH CHỌN MAP -->
+        <div id="map-selection-screen" class="hidden">
+            <div id="snow-container"></div>
+            <h1 class="main-title">Thế Giới Diệu Kỳ Của Bé</h1>
+            <h2 class="sub-title">Chinh phục các thử thách nào!</h2>
+            <div class="map-choices" id="map-choices"></div>
+        </div>
+        
         <!-- KHU VỰC TRÒ CHƠI -->
         <div id="game-area" class="hidden">
-            <!-- LỘ TRÌNH MỚI (Icon là quả cam) -->
+            <div class="game-header">
+                <p id="question-counter" class="question-counter"></p>
+                <div id="heart-container" class="hidden"></div>
+            </div>
+            <div id="timer-container" class="hidden"><div id="timer-bar"></div></div>
             <div class="progress-map-container">
                 <div class="progress-map" id="progress-map"></div>
-                <div class="player-icon" id="player-icon">🍊</div>
-                <div class="final-goal" id="final-goal">🦫</div>
+                <div class="player-icon" id="player-icon"></div>
+                <div class="final-goal" id="final-goal"></div>
             </div>
-
-            <h2 id="question-text" class="question-text">Bé sẵn sàng chưa nào?</h2>
+            <h2 id="question-text" class="question-text">...</h2>
             <div class="answers" id="answer-buttons"></div>
             <p id="feedback-message" class="feedback-message"></p>
         </div>
 
-        <!-- MÀN HÌNH CHIẾN THẮNG -->
+        <!-- CÁC MÀN HÌNH KẾT THÚC -->
         <div id="win-screen" class="hidden">
-            <h2 class="win-title">BÉ GIỎI QUÁ!</h2>
-            <div class="character-image-win" id="character-image-win">🦫</div>
-            <p class="win-subtitle">Bạn Capybara đã được tự do nhờ bé đó!</p>
-            <button id="play-again-btn" class="action-btn">Chơi lại</button>
+            <h2 id="win-title" class="win-title">HOÀN THÀNH!</h2>
+            <div id="character-image-win" class="character-image-win"></div>
+            <p id="unlock-message" class="unlock-message hidden"></p>
+            <p id="win-subtitle" class="win-subtitle"></p>
+            <button id="play-again-btn" class="action-btn">Chọn Map Khác</button>
+        </div>
+        <div id="game-over-screen" class="hidden">
+             <h2 id="game-over-title" class="game-over-title">GAME OVER</h2>
+             <div id="game-over-character" class="game-over-character">😵</div>
+             <p id="game-over-text" class="game-over-text">Đừng nản chí, thử lại nhé!</p>
+             <button id="retry-btn" class="action-btn">Chơi Lại Map Này</button>
         </div>
     </div>
-
-    <!-- MÀN HÌNH ĂN MỪNG ĐÚNG CÂU HỎI -->
-    <div id="correct-overlay" class="hidden">
-        <h2 id="correct-message">Tuyệt vời!</h2>
-    </div>
-
-    <!-- AUDIO KHÔNG THAY ĐỔI -->
+    
+    <div id="correct-overlay" class="hidden"><h2 id="correct-message">Tuyệt vời!</h2></div>
+    
     <audio id="bg-music" src="background-music.mp3" loop></audio>
     <audio id="correct-sound" src="correct-sound.mp3"></audio>
     <audio id="wrong-sound" src="wrong-sound.mp3"></audio>
